@@ -3,13 +3,16 @@ import requests
 import pandas as pd
 import geopandas as gpd
 import numpy as np
-m = folium.Map(location=[37, 0],
-               zoom_start=2.5,
-               tiles='https://server.arcgisonline.com/arcgis/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}',
-               attr='My Data Attribution')
+
+
 # data = pd.DataFrame(r"F:\API stuff\folium_project\ukdata.json")
 
 geojson = gpd.read_file(r"F:\API stuff\folium_project\ukdata.json")
+
+m = folium.Map(location=[geojson.lat.mean(), geojson.long.mean()],
+               zoom_start=7,
+               tiles='https://server.arcgisonline.com/arcgis/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}',
+               attr='My Data Attribution')
 # print(geojson.dtypes)
 geojson = geojson[['OBJECTID', 'geometry']]
 geojson['OBJECTID'] = geojson['OBJECTID'].map(str)
