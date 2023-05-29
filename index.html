@@ -6,41 +6,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        body,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: "Montserrat", sans-serif
-        }
+    
 
-        .w3-row-padding img {
-            margin-bottom: 12px
-        }
-
-        /* Set the width of the sidebar to 120px */
-        .w3-sidebar {
-            width: 120px;
-            background: #222;
-        }
-
-        /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-        #main {
-            margin-left: 120px
-        }
-
-        /* Remove margins from "page content" on small screens */
-        @media only screen and (max-width: 600px) {
-            #main {
-                margin-left: 0
-            }
-        }
-    </style>
 </head>
 
 <body class="w3-black">
@@ -59,7 +29,11 @@
         </a>
         <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
             <i class="fa fa-eye w3-xxlarge"></i>
-            <p>PHOTOS</p>
+            <p>GIS Projects</p>
+        </a>
+        <a href="#coding" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-eye w3-xxlarge"></i>
+            <p>Coding Projects</p>
         </a>
         <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
             <i class="fa fa-envelope w3-xxlarge"></i>
@@ -72,7 +46,8 @@
         <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
             <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
             <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-            <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+            <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">GIS Projects</a>
+            <a href="#coding" class="w3-bar-item w3-button" style="width:25% !important">Coding Projects</a>
             <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
         </div>
     </div>
@@ -120,18 +95,18 @@
 
             <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
                 <div class="w3-half w3-section">
-                    <span class="w3-xlarge">Coding packages used:</span><br>
-                    
+                    <span class="w3-xlarge">Coding packages familiar with:</span><br>
+                    React, Folium, pandas, numpy, matplotlib, tkinter 
                 </div>
                 <div class="w3-half w3-section">
-                    <span class="w3-xlarge">Coding packages used:</span><br>
+                    <span class="w3-xlarge">Other skills:</span><br>
                     Projects Done
                 </div>
 
             </div>
 
             <button class="w3-button w3-light-grey w3-padding-large w3-section">
-                <i class="fa fa-download"></i> Download Resume
+                <i class="fa fa-download"  ></i><a href="darkmee.png" download> Download Resume </a>
             </button>
 
            
@@ -143,17 +118,60 @@
 
         <!-- Portfolio Section -->
         <div class="w3-padding-64 w3-content" id="photos">
-            <h2 class="w3-text-light-grey">My g</h2>
+            <h2 class="w3-text-light-grey">My GIS Projects 🌏</h2>
             <hr style="width:200px" class="w3-opacity">
 
-            <!-- Grid for photos -->
+            <!-- Grid for GIS -->
             <div class="w3-row-padding" style="margin:0 -16px">
                 <div class="w3-half">
+                    <h4>Folium choropleth map project</h4>
+                    <p>This map looks at the unemployment percentage across uk regions (2023 data)</p>
+                    <iframe class="map" ,  src="/map.html" width="100%" height="400vh" ></iframe>
+                    <h4>Folium choropleth map project</h4>
+                    <iframe class="map" , src="/map.html" width="100%" height="400vh"></iframe>
+                    <p>This map looks at the unemployment percentage across uk regions (2023 data)</p>
+                    <h4>Folium choropleth map project</h4>
+                    <iframe class="map" , src="/map.html" width="100%" height="400vh"></iframe>
+                    <p>This map looks at the unemployment percentage across uk regions (2023 data)</p>
+                
+                </div>
+
+                <div class="w3-half">
+                    
+                    <img id="myImg" src="Unemployment_England_preview.png"  alt="Snow" style="width:100%">
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <!-- <img class="modal-content" id="img01"> -->
+                        <h4>unemployment rate in uk 2023 regions</h4>
+                        <p>This choropleth map descrives the unemployment percentage across the major uk regions. The map was created using python. The packages involved in the creation of </p>
+                        <iframe class="map" , src="/map.html" width="100%" height="85%"></iframe>
+                        <div id="caption"></div>
+                    </div>
+
+                    <img src="https://www.w3schools.com/w3images/chef.jpg" style="width:100%">
                     <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
+                    <img src="https://www.w3schools.com/w3images/p6.jpg" style="width:100%">
+                </div>
+                <!-- End photo grid -->
+            </div>
+            <!-- End Portfolio Section -->
+        </div>
+
+
+        <!--Coding Portfolio Section -->
+        <div class="w3-padding-64 w3-content" id="coding">
+            <h2 class="w3-text-light-grey">My gg</h2>
+            <hr style="width:200px" class="w3-opacity">
+        
+            <!-- Grid for Coding -->
+            <div class="w3-row-padding" style="margin:0 -16px">
+                <div class="w3-half">
+                    <img src="file-rename-image.png" style="width:100%">
                     <img src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">
                     <img src="https://www.w3schools.com/w3images/sailboat.jpg" style="width:100%">
                 </div>
-
+        
                 <div class="w3-half">
                     <img src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
                     <img src="https://www.w3schools.com/w3images/chef.jpg" style="width:100%">
@@ -165,15 +183,18 @@
             <!-- End Portfolio Section -->
         </div>
 
+
+
+
         <!-- Contact Section -->
         <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
             <h2 class="w3-text-light-grey">Contact Me</h2>
             <hr style="width:200px" class="w3-opacity">
 
             <div class="w3-section">
-                <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-                <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-                <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com
+                <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> York, UK</p>
+                <p><i class="fa fa-linkedin fa-fw w3-text-white w3-xxlarge w3-margin-right w3-hover-opacity"></i>Linked In</p>
+                <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: jamie.geddes13@gmail.com
                 </p>
             </div><br>
             <p>Let's get in touch. Send me a message:</p>
@@ -210,5 +231,5 @@
     </div>
 
 </body>
-
+<script src="functions.js"></script>
 </html>

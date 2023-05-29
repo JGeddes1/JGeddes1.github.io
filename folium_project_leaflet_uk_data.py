@@ -3,14 +3,16 @@ import requests
 import pandas as pd
 import geopandas as gpd
 import numpy as np
+from flask import Flask, render_template
 
+app = Flask(__name__)
 
 # data = pd.DataFrame(r"F:\API stuff\folium_project\ukdata.json")
 
 geojson = gpd.read_file(r"F:\API stuff\folium_project\ukdata.json")
 
 m = folium.Map(location=[geojson.lat.mean(), geojson.long.mean()],
-               zoom_start=7,
+               zoom_start=5.5,
                tiles='https://server.arcgisonline.com/arcgis/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}',
                attr='My Data Attribution')
 # print(geojson.dtypes)
@@ -66,7 +68,7 @@ folium.Choropleth(
     key_on="feature.properties.OBJECTID",
     fill_color="YlOrRd",
     fill_opacity=0.7,
-    line_opacity=0.2,
+    line_opacity=0.5,
     legend_name="Unemployment Rate (%)",
     highlight=True,
     line_color='white'
@@ -102,4 +104,13 @@ folium.features.GeoJson(
 ).add_to(m)
 
 
-m.save("F://API stuff//folium_project//index.html")
+m.save("F://API stuff//folium_project//map.html")
+
+
+@app.route('/map')
+def map():
+    return render_template('map.html')
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
