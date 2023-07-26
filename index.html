@@ -2,10 +2,10 @@
 <html>
 
 <head>
-    <title>W3.CSS Template</title>
+    <title>Jamie Geddes Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,34 +21,40 @@
         <img src="darkmee.png" style="width:100%">
         <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
             <i class="fa fa-home w3-xxlarge"></i>
-            <p>HOME</p>
+            <p>Home</p>
         </a>
         <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
             <i class="fa fa-user w3-xxlarge"></i>
-            <p>ABOUT</p>
+            <p>About</p>
         </a>
-        <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-            <i class="fa fa-eye w3-xxlarge"></i>
+        
+        <a href="#GIS" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-globe w3-xxlarge"></i>
             <p>GIS Projects</p>
         </a>
         <a href="#coding" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-            <i class="fa fa-eye w3-xxlarge"></i>
+            <i class="fa fa-code w3-xxlarge"></i>
             <p>Coding Projects</p>
+        </a>
+        <a href="#conferences/papers" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-paperclip w3-xxlarge"></i>
+            <p>Papers /<br>Conferences</p>
         </a>
         <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
             <i class="fa fa-envelope w3-xxlarge"></i>
-            <p>CONTACT</p>
+            <p>Contact</p>
         </a>
     </nav>
 
     <!-- Navbar on small screens (Hidden on medium and large screens) -->
     <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
         <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-            <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-            <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-            <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">GIS Projects</a>
+            <a href="#" class="w3-bar-item w3-button" style="width:25% !important">Home</a>
+            <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">About</a>
+            <a href="#GIS" class="w3-bar-item w3-button" style="width:25% !important">GIS Projects </a>
             <a href="#coding" class="w3-bar-item w3-button" style="width:25% !important">Coding Projects</a>
-            <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+            <a href="#conferences/papers" class="w3-bar-item w3-button" style="width:25% !important">Papers /<br>Conferences</a>
+            <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">Contact</a>
         </div>
     </div>
 
@@ -94,15 +100,39 @@
             </div><br>
 
             <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-                <div class="w3-half w3-section">
+                <div class="w3-section">
                     <span class="w3-xlarge">Coding packages familiar with:</span><br>
-                    React, Folium, pandas, numpy, matplotlib, tkinter 
-                </div>
-                <div class="w3-half w3-section">
-                    <span class="w3-xlarge">Other skills:</span><br>
-                    Projects Done
+                    React, Folium, pandas, numpy, matplotlib, tkinter,  
                 </div>
 
+            </div>
+
+            <h2 class="w3-text-light-grey">Courses Completed</h2>
+            <hr style="width:200px" class="w3-opacity">
+            
+            
+            <div class="w3-row  w3-padding-16 w3-section w3-light-grey">
+                <ul>
+                    <li><a
+                            href="https://www.udemy.com/certificate/UC-9c9d7098-b757-4e65-a9c9-12e9814f0eb8/?utm_source=sendgrid.com&utm_medium=email&utm_campaign=email">
+                            I completed the Udemy course on ArcGIS Desktop For Spatial Analysis: Go From Basic To Pro (2023)</a>
+                    </li>
+                    <li><a
+                            href="https://coursera.org/share/037d9beffa3e06210d2112ffe63314cd">
+                            Completed The IBM Certified Excel Basics for Data Analysis Course</a>
+                    </li>
+                    <li><a
+                            href="https://coursera.org/share/f8842d7bd2eaffd56530031f26acb4e0">
+                            Completed The IBM Certified Introduction to Data Analytics </a>
+                    </li>
+                    <li>Completed QA Python Level 1 Course Certificate</li>
+                    <li>Completed Esri Python for Everyone Web Course Certificate</li>
+                    <li>Completed Esri GIS Basics Course Certificate</li>
+                    <li>Completed linkedin JavaScript Skill Assessment</li>
+                    <li>Completed linkedin MySQL Skill Assessment</li>
+                </ul>
+                
+            
             </div>
 
             <button class="w3-button w3-light-grey w3-padding-large w3-section">
@@ -117,39 +147,111 @@
         </div>
 
         <!-- Portfolio Section -->
-        <div class="w3-padding-64 w3-content" id="photos">
+        <div class="w3-padding-64 w3-content" id="GIS">
             <h2 class="w3-text-light-grey">My GIS Projects 🌏</h2>
+            <p>Click on image for more info</p>
             <hr style="width:200px" class="w3-opacity">
 
             <!-- Grid for GIS -->
             <div class="w3-row-padding" style="margin:0 -16px">
                 <div class="w3-half">
-                    <h4>Folium choropleth map project</h4>
-                    <p>This map looks at the unemployment percentage across uk regions (2023 data)</p>
-                    <iframe class="map" ,  src="/map.html" width="100%" height="400vh" ></iframe>
-                    <h4>Folium choropleth map project</h4>
-                    <iframe class="map" , src="/map.html" width="100%" height="400vh"></iframe>
-                    <p>This map looks at the unemployment percentage across uk regions (2023 data)</p>
-                    <h4>Folium choropleth map project</h4>
-                    <iframe class="map" , src="/map.html" width="100%" height="400vh"></iframe>
-                    <p>This map looks at the unemployment percentage across uk regions (2023 data)</p>
+                        <!-- Start photo1 -->
+                        <div class="container">
+                            <img id="myImg" class="myImages" src="Unemployment_England_preview.png" alt="unemployment" style="width:100%">
+                            <div class="overlay">Unemployment rate in UK (May 2023)</div>
+                        </div>
+                        <!-- The Modal -->
+                        <div id="myModal"  class="modal">
+                            <span class="close">&times;</span>
+                            
+                            <div id="text01" class="myTexts">
+                                <h4>Unemployment rate in uk 2023 regions</h4>
+                                <p>This choropleth map descrives the unemployment percentage across the major uk regions. The map was created using
+                                    python. The packages involved in the creation of </p>
+                            </div><!-- <img class="modal-content" id="img01"> -->
+                            
+                            <iframe class="map" , src="/map.html" width="100%" height="85%"></iframe>
+                            <div id="caption"></div>
+                        </div>
+                        <!-- End photo1 -->
+                        <!-- Start photo2-left side -->
+                                            <div class="container">
+                                                <img id="myImg2" class="myImages"  src="/GIS_map_images/terrain_roughness_riley.png" alt="terrain roughness" style="width:100%">
+                                                <div class="overlay">Topographic Ruggedness Index (Riley) Mesolithic Sites in Iron Gates</div>
+                                            </div>
+                                            <!-- The Modal -->
+                                            <div id="myModal2" class="modal">
+                                                <span class="close">&times;</span>
+                                                <!-- <img class="modal-content" id="img01"> -->
+                                                <div id="text02" class="myTexts " >
+                                                    <h4>Topographic Ruggedness Index (Riley) Mesolithic Sites in Iron Gates</h4>
+                                                    <h5>Introduction</h5>
+                                                    <p>In this project I am focusing on the main burial sites within the Iron gate, from the mesolithic
+                                                        period. These sites include Vlasac, Lepenski Vir, Climente II, Kula, and Schela Cladovei.
+                                                        The rationale for choosing this project is that the sites all have different burial practises
+                                                        within the small terrain. This is thought to be due to the landscape being hard to navigate
+                                                        and pass, therefore leading to a spread of tribes and lack of interaction between tribes
+                                                        leading to the use of different mortuary rights taking place.
+                                                        The maps developed aim to demonstrate if this theory is correct and to provide evidence
+                                                        that helps to provide an understanding of why there are varying burial practises across the
+                                                        sites.</p>
+                                                    <p>You can download the data here</p>
+                                                    <div id="image_container">
+                                                    
+                                                        <img src="/GIS_map_images/terrain_roughness_riley.png" alt="terrain roughness" style="width:40%" float:left;>
+                                                </div>
+                                               
+                                                <div id="floated">
+                                                <p></p>
+                                                
+                                                                        <button class="w3-button w3-light-grey w3-padding-large w3-section">
+                                                                            <i class="fa fa-download"></i><a href="darkmee.png" download> Download PDF </a>
+                                                                        </button>
+                                                </div>
+                                                </div>
+                                                
+
+                                                    
+                                                
+                                                <div id="caption2"></div>
+                                            </div>
+                    <!-- End photo2 -->
+                    
                 
                 </div>
 
                 <div class="w3-half">
-                    
-                    <img id="myImg" src="Unemployment_England_preview.png"  alt="Snow" style="width:100%">
+                    <!-- Start photo1 right side -->
+                    <div class="container">
+                        <img id="myImg3" class="myImages" src="Site Suitability Layout.jpg" alt="Snow" style="width:100%">
+                        <div class="overlay">Site Suitability for a new Hospital in York</div>
+                    </div>
                     <!-- The Modal -->
-                    <div id="myModal" class="modal">
+                    <div id="myModal3" class="modal">
                         <span class="close">&times;</span>
                         <!-- <img class="modal-content" id="img01"> -->
-                        <h4>unemployment rate in uk 2023 regions</h4>
+                        <h4>Site Suitability for a new Hospital in York</h4>
                         <p>This choropleth map descrives the unemployment percentage across the major uk regions. The map was created using python. The packages involved in the creation of </p>
                         <iframe class="map" , src="/map.html" width="100%" height="85%"></iframe>
-                        <div id="caption"></div>
+                        <div id="caption3"></div>
                     </div>
-
-                    <img src="https://www.w3schools.com/w3images/chef.jpg" style="width:100%">
+                    <!-- End photo1 -->
+                    <!-- Start photo1 right side -->
+                    <div class="container">
+                        <img id="myImg4" class="myImages" src="/GIS_map_images/Flood RIsk Yorkshire.jpg" alt="Snow" style="width:100%">
+                        <div class="overlay">Site Suitability for a new Hospital in York</div>
+                    </div>
+                    <!-- The Modal right 2 -->
+                    <div id="myModal4" class="modal">
+                        <span class="close">&times;</span>
+                        <!-- <img class="modal-content" id="img01"> -->
+                        <h4>Site Suitability for a new Hospital in York</h4>
+                        <p>This choropleth map descrives the unemployment percentage across the major uk regions. The map was created using
+                            python. The packages involved in the creation of </p>
+                        <iframe class="map" , src="/GIS_map_images/Flood RIsk Yorkshire.jpg" width="100%" height="85%"></iframe>
+                        <div id="caption4"></div>
+                    </div>
+                    
                     <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
                     <img src="https://www.w3schools.com/w3images/p6.jpg" style="width:100%">
                 </div>
@@ -161,7 +263,7 @@
 
         <!--Coding Portfolio Section -->
         <div class="w3-padding-64 w3-content" id="coding">
-            <h2 class="w3-text-light-grey">My gg</h2>
+            <h2 class="w3-text-light-grey">My Coding Projects</h2>
             <hr style="width:200px" class="w3-opacity">
         
             <!-- Grid for Coding -->
@@ -173,13 +275,98 @@
                 </div>
         
                 <div class="w3-half">
-                    <img src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
+
+                    <!-- Start photo2 -->
+                    <div class="container">
+                        <img id="dissertation_Img" src="Dissertation.png" alt="Snow" style="width:100%">
+                        <div class="overlay">Digitising Single Context Recording Sheets</div>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="dissertationmodal" class="modal">
+                        <span class="close">&times;</span>
+                        <!-- <img class="modal-content" id="img01"> -->
+                        <h4>Unemployment rate in uk 2023 regions</h4>
+                        <p>This choropleth map descrives the unemployment percentage across the major uk regions. The map was created using
+                            python. The packages involved in the creation of </p>
+                        <iframe class="map" , src="/map.html" width="100%" height="85%"></iframe>
+                        <div id="captiondiss"></div>
+                    </div>
+                    <!-- End photo2 -->
+
+
+                        <img id="myImg" src="strava api react project.png" alt="Snow" style="width:100%">
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <!-- <img class="modal-content" id="img01"> -->
+                        <h4>Strava React and Javascript API project</h4>
+                        <p>This API project</p>
+                        <iframe class="map" , src="/map.html" width="100%" height="85%"></iframe>
+                        <div id="caption"></div>
+                    </div>
+
+                    
                     <img src="https://www.w3schools.com/w3images/chef.jpg" style="width:100%">
                     <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
                     <img src="https://www.w3schools.com/w3images/p6.jpg" style="width:100%">
                 </div>
                 <!-- End photo grid -->
             </div>
+
+
+
+                    <!-- Papers Section -->
+                    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="conferences/papers">
+                        <h2 class="w3-text-light-grey">Jamie Geddes</h2>
+                        <hr style="width:200px" class="w3-opacity">
+
+                    
+                        <div class="w3-row  w3-padding-16 w3-section w3-light-grey">
+                            <div class=" w3-section">
+                                <span class="w3-xlarge">Papers and Conferences attended:</span><br>
+                                
+                            </div>
+                            <p><ul>
+                                <li><em>Attended and presented at CAA 2023 in Amsterdam.</em></li>
+                            </ul> </p>
+                            <div class=" w3-section">
+                                <span class="w3-xlarge">Papers involved in:</span><br>
+                            </div>
+                                <ul>
+                                <li><i>High Speed 2 vs Unpath’d Waters: keeping large projects FAIR
+                                Authors: Evelyn A Curl (Archaeology Data Service)*; Teagan K Zoldoske (Archaeology Data Service); Jamie G Geddes
+                                (Archaeology Data Service)</i></li>
+                                <li><i>Aggregating the UK’s maritime data in Unpath’d Waters
+                                Authors: Julian Richards (GB)*; Jamie Bradley (Archaeology Data Service); Jamie G Geddes (Archaeology Data Service);
+                                Holly Wright (University of York)</i></li>
+                                </ul>
+                            
+                                I was also involved in and originally Credited as a co-author, on pangborn sensory science symposium conference paper, but can not find any reference now:
+                                ECR_F_09/TP1_40
+                                <i>A dash of virtual milk: Altering product colour in virtual reality influences flavour perception of cold-brew coffee
+                                </i>
+                            
+                            <br class="w3-section">
+                                <div class=" w3-section"><span class="w3-xlarge">Other skills:</span><br></div>
+                                
+                                Created an accurate representation of a Persian spear, from the battle at Thermopylae 480BC with over 150 downloads:<br>
+                                <li><a href="https://sketchfab.com/3d-models/persian-immortal-units-spear-d23d1b8ab7b84d869c2a4f79a256b8b9">link to 3D model Spear</a>
+                                    </li>
+                                
+
+                                </div>
+                    
+                        </div>
+                    
+                        <button class="w3-button w3-light-grey w3-padding-large w3-section">
+                            <i class="fa fa-download"></i><a href="darkmee.png" download> Download Resume </a>
+                        </button>
+                    
+                    
+                    </div>
+                    
+                    
+                    <!-- End About Section -->
             <!-- End Portfolio Section -->
         </div>
 
@@ -222,8 +409,7 @@
             <i class="fa fa-twitter w3-hover-opacity"></i>
             <i class="fa fa-linkedin w3-hover-opacity"></i>
             <p class="w3-small">This website was made with W3schools Spaces. Make your own free website today!</p>
-            <a class="w3-button w3-round-xxlarge w3-small w3-light-grey" href="https://www.w3schools.com/spaces"
-                target="_blank">Start now</a>
+
             <!-- End footer -->
         </footer>
 
