@@ -1,87 +1,96 @@
-// function showStuff() {
-//   let hidden = document.getElementById('hidden');
-//   if (hidden.style.display == "none") {
-//     hidden.style.display = "block"
-//   } else {
-//     hidden.style.display = "none"
-//   }
-// }
+// Get references to elements
+const modalContainer = document.getElementById('modal-container');
+const modalContent = document.getElementById('modal-content');
 
-// Left 1st images
+// Get all project images
+const projectImages = document.querySelectorAll('.project-image');
 
-// Get the modal
-var modal = document.getElementById("myModal");
+// Add click event listener to each project image
+projectImages.forEach(image => {
+    image.addEventListener('click', () => {
+        // Get the target modal ID
+        const modalTarget = image.getAttribute('data-modal-target');
+        
+        // Get the content for the specific modal
+        const projectDetails = getProjectDetails(modalTarget);
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
+        // Set the modal content
+        modalContent.innerHTML = projectDetails;
+
+        // Display the modal
+        modalContainer.style.display = 'block';
+    });
+});
+
+// Function to close the modal
+function closeModal() {
+    modalContainer.style.display = 'none';
 }
 
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-  modal.style.display = "none";
+// Function to get the content for a specific project modal
+function getProjectDetails(modalTarget) {
+    switch (modalTarget) {
+        case 'modal1':
+            return `
+                <h4>Unemployment rate in uk 2023 regions</h4>
+                  <p>This choropleth map descrives the unemployment percentage across the major uk regions. The map was created using
+                                        python. The packages involved in the creation of </p> 
+                <iframe class="map" , src="/map.html" width="100%" height="85%"></iframe>
+            `;
+        case 'modal2':
+            return `
+                <h4>Topographic Ruggedness Index (Riley) Mesolithic Sites in Iron Gates</h4>
+                                                    <h5>Introduction</h5>
+                                                    <p>In this project I am focusing on the main burial sites within the Iron gate, from the mesolithic
+                                                        period. These sites include Vlasac, Lepenski Vir, Climente II, Kula, and Schela Cladovei.
+                                                        The rationale for choosing this project is that the sites all have different burial practises
+                                                        within the small terrain. This is thought to be due to the landscape being hard to navigate
+                                                        and pass, therefore leading to a spread of tribes and lack of interaction between tribes
+                                                        leading to the use of different mortuary rights taking place.
+                                                        The maps developed aim to demonstrate if this theory is correct and to provide evidence
+                                                        that helps to provide an understanding of why there are varying burial practises across the
+                                                        sites.</p>
+                                                    <p>You can download the data here</p>
+                                                    <div id="image_container">
+                                                    
+                                                        <img src="/GIS_map_images/terrain_roughness_riley.png" alt="terrain roughness" style="width:100%" float:left;>
+                                                </div>
+                                               
+                                                <div id="floated">
+                                                <p></p>
+                                                
+                                                                        <button class="w3-button w3-light-grey w3-padding-large w3-section">
+                                                                            <i class="fa fa-download"></i><a href="darkmee.png" download> Download PDF </a>
+                                                                        </button>
+                                                </div>
+            `;
+        case 'modal3':
+            return `
+                  <h4>Site Suitability for a new Hospital in York</h4>
+                        <p>This choropleth map descrives the unemployment percentage across the major uk regions. The map was created using python. The packages involved in the creation of </p>
+                        <iframe class="map" , src="/map.html" width="100%" height="85%"></iframe>
+            `;
+       case 'modal4':
+            return `
+                  <h4>Strava React and Javascript API project</h4>
+                        <p>This API project</p>
+                        <iframe class="map" , src="/map.html" width="100%" height="85%"></iframe>
+            `;
+       case 'modal5':
+            return `
+                  <h4>Flood Risk Analysis Of Yorkshire</h4>
+                        <p>Modal 4 </p>
+                        <button class="w3-button w3-light-grey w3-padding-large w3-section">
+                          <i class="fa fa-download"></i><a href="/GIS_map_images/Flood RIsk Yorkshire.jpg" download> Download PDF </a>
+                        </button>
+            `;
+       case 'modal6':
+            return `
+                  <h4>Flood Risk Analysis Of Yorkshire</h4>
+                        <p>Modal 4 </p>
+                        <iframe class="map" , src="/GIS_map_images/Flood RIsk Yorkshire.jpg" width="100%" height="85%"></iframe>
+            `;
+        default:
+            return ''; // Return an empty string for unknown modal targets
+    }
 }
-
-
-
-
-
-
-// Left 2nd image
-
-// Get the modal
-var modal2 = document.getElementById("myModal2");
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img2 = document.getElementById("myImg2");
-
-var captionText2 = document.getElementById("caption2");
-img2.onclick = function(){
-  modal2.style.display = "block";
-  modalImg2.src = this.src;
-  captionText2.innerHTML = this.alt;
-}
-
-
-// Get the <span> element that closes the modal
-var span2 = document.getElementsByClassName("close")[1];
-
-// When the user clicks on <span> (x), close the modal
-span2.onclick = function() { 
-  modal2.style.display = "none";
-}
-
-
-
-// Right modal 1st images
-// Get the modal
-var modal3 = document.getElementById("myModal3");
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img3 = document.getElementById("myImg3");
-
-var captionText3 = document.getElementById("caption3");
-img3.onclick = function(){
-  modal3.style.display = "block";
-  modalImg3.src = this.src;
-  captionText3.innerHTML = this.alt;
-}
-
-
-// Get the <span> element that closes the modal
-var span3 = document.getElementsByClassName("close")[2];
-
-// When the user clicks on <span> (x), close the modal
-span3.onclick = function() { 
-  modal3.style.display = "none";
-}
-

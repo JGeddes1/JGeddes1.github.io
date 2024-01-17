@@ -9,7 +9,8 @@
    }
 
    .w3-row-padding img {
-     margin-bottom: 12px
+     margin-bottom: 5px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
    }
 
    /* Set the width of the sidebar to 120px */
@@ -20,7 +21,8 @@
 
    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
    #main {
-     margin-left: 120px
+     margin-left: 120px;
+     background-color: #f1f1f1;
    }
 
 
@@ -65,49 +67,14 @@
      transition: 0.3s;
    }
 
-   #myImg:hover  {
-     opacity: 0.7;
-    
-   }
-
-            #myImg2 {
-              border-radius: 5px;
-              cursor: pointer;
-              transition: 0.3s;
-            }
-      
-            #myImg2 {
-              border-radius: 5px;
-              cursor: pointer;
-              transition: 0.3s;
-            }
-      
-            #myImg2:hover {
-              opacity: 0.7;
-      
-            }
 
 
-            #myImgRight1 {
-              border-radius: 5px;
-              cursor: pointer;
-              transition: 0.3s;
-            }
-      
-            #myImgRight1 {
-              border-radius: 5px;
-              cursor: pointer;
-              transition: 0.3s;
-            }
-      
-            #myImgRight1:hover {
-              opacity: 0.7;
-      
-            }
 
      .container {
-       position: relative;
-       width: 100%;
+      position: relative;
+      width: 100%;
+      
+      
      
      }
   
@@ -130,15 +97,17 @@
        color: white;
        font-size: 20px;
        padding: 20px;
+       padding-bottom: 500px;
        text-align: center;
      }
   
      .container:hover .overlay {
        opacity: 1;
+       padding-bottom: 12%;
      }
 
    /* The Modal (background) */
-   .modal, .Modalright1 {
+   .modal{
      display: none;
      /* Hidden by default */
      position: fixed;
@@ -174,7 +143,7 @@
      margin: auto;
      display: block;
      width: 80%;
-     max-width: 700px;
+     max-width: 100%;
      text-align: center;
      color: #ccc;
      padding: 10px 0;
@@ -214,6 +183,55 @@
            background-color: rgba(0, 0, 0, 0.9);
            /* Black w/ opacity */
          }
+         
+         /* The Modal (background) */
+         .modal3 {
+           display: none;
+           /* Hidden by default */
+           position: fixed;
+           /* Stay in place */
+           z-index: 1;
+           /* Sit on top */
+           padding-top: 100px;
+           /* Location of the box */
+           left: 0;
+           top: 0;
+           width: 100%;
+           /* Full width */
+           height: 100%;
+           /* Full height */
+           overflow: auto;
+           /* Enable scroll if needed */
+           background-color: rgb(0, 0, 0);
+           /* Fallback color */
+           background-color: rgba(0, 0, 0, 0.9);
+           /* Black w/ opacity */
+         }
+
+         
+         /* The Modal (background) */
+         .modal4 {
+           display: none;
+           /* Hidden by default */
+           position: fixed;
+           /* Stay in place */
+           z-index: 1;
+           /* Sit on top */
+           padding-top: 100px;
+           /* Location of the box */
+           left: 0;
+           top: 0;
+           width: 100%;
+           /* Full width */
+           height: 100%;
+           /* Full height */
+           overflow: auto;
+           /* Enable scroll if needed */
+           background-color: rgb(0, 0, 0);
+           /* Fallback color */
+           background-color: rgba(0, 0, 0, 0.9);
+           /* Black w/ opacity */
+         }
     
          /* Modal Content (image) */
          .modal2-content {
@@ -222,9 +240,35 @@
            width: 80%;
            max-width: 700px;
          }
+                  /* Modal Content (image) */
+         .modal3-content {
+           margin: auto;
+           display: block;
+           width: 80%;
+           max-width: 700px;
+         }
+
+                  /* Modal Content (image) */
+         .modal4-content {
+           margin: auto;
+           display: block;
+           width: 80%;
+           max-width: 700px;
+         }
     
          /* Caption of Modal Image */
          #caption2 {
+           margin: auto;
+           display: block;
+           width: 80%;
+           max-width: 700px;
+           text-align: center;
+           color: #ccc;
+           padding: 10px 0;
+           height: 150px;
+         }
+          /* Caption of Modal Image */
+         #caption3 {
            margin: auto;
            display: block;
            width: 80%;
@@ -285,3 +329,176 @@
 
 
    }
+
+/* Styles for the modal and overlay */
+.modal-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 13, 13, 0.7);
+  overflow: auto;
+}
+
+.modal-content {
+  width: 80%;
+  /* Adjust the width as needed */
+  max-width: 800px;
+  /* Set a maximum width if desired */
+  margin: 20px auto;
+  /* Center the modal horizontally */
+  background-color: black;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  /* Change the color as needed */
+}
+
+/* Adjust the height of the iframe in the modal */
+.map {
+  height: 500px;
+  /* Adjust the percentage or use a fixed value like 400px based on your preference */
+}
+
+
+.Education-container{
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    
+      /* Stack items vertically */
+  }
+
+.Education-image{
+    flex: 0 0 20%;
+      /* 20% width of the container */
+    /* margin-right: 30px; */
+    flex-direction: column;
+    
+  }
+
+
+.Education-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8%;
+            padding: 10%;
+            float: right;
+        }
+
+.Qualification_Image{
+    flex: 0 0 40%;
+      /* 30% width of the container */
+    /* margin-right: 30px; */
+ 
+    
+  }
+
+.Qualification_Image img {
+      width: 40%;
+      height: auto;
+      border-radius: 8px;
+     
+    }
+
+.content {
+   flex: 1; /* Takes up remaining space */
+    display: flex;
+      /* Use flexbox */
+      justify-content: space-between;
+      /* Add space between the two content boxes */
+        }
+
+
+.degree1,
+.degree2 {
+  width: 48%;
+  /* Adjust width as needed and leave some space for margins */
+  box-sizing: border-box;
+  margin-bottom: 5px;
+
+  /* Add some margin between the two content boxes */
+}
+
+
+.welcome-container{
+              max-width: 100%;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                text-align: center;
+}
+
+
+welcome-img {
+            max-width: 100%;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+.text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+.learn-more-btn {
+            background-color: grey;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+            animation: pulse 1s infinite; /* Apply pulsing animation */
+            
+        }
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.scroll-arrows {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.arrow {
+  font-size: 2em;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #333;
+}
