@@ -26,22 +26,7 @@
    }
 
 
-        #dissertation_Img {
-          border-radius: 5px;
-          cursor: pointer;
-          transition: 0.3s;
-        }
-    
-        #dissertation_Img {
-          border-radius: 5px;
-          cursor: pointer;
-          transition: 0.3s;
-        }
-    
-        #dissertation_Img:hover {
-          opacity: 0.7;
-    
-        }
+
 
 
     #image_container {
@@ -69,15 +54,15 @@
 
 
 
-/* 
+
      .container {
       position: relative;
       width: 100%;
-      
-      
-     
-     } */
+     }
+
+ 
   
+
      .image {
        display: block;
        width: 100%;
@@ -204,9 +189,9 @@
 
 .close-btn {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 150px;
+  top: 1%;
+    right: 1%;
+    font-size: 200%;
   cursor: pointer;
   color: white;
   /* Change the color as needed */
@@ -215,9 +200,9 @@
 
 .close-btn2 {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 20px;
+  top: 1%;
+  right: 1%;
+  font-size: 200%;
   cursor: pointer;
   color: white;
   /* Change the color as needed */
@@ -360,4 +345,110 @@ welcome-img {
   border-radius: 50%;
   background-color: #fff;
   color: #333;
+}
+
+
+
+.video-container {
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.video-container2 {
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+
+/* switch buttons section */
+.switch-btn {
+  position: absolute;
+  top: 7%;
+  left: 7%;
+  width: 7rem;
+  height: 2rem;
+  display: flex;
+  border-radius: 0.5rem;
+  align-items: center;
+  justify-content: space-around;
+  border: none;
+  transition: all 0.3s linear;
+}
+
+.switch-btn span {
+  display: inline-block;
+  font-size: 0.85rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  color: #49a6e9;
+}
+
+.switch {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  background: #49a6e9;
+  border-radius: 0.5rem;
+  margin: 0;
+  display: block;
+  transition: all 0.3s linear;
+}
+
+.slide .switch {
+  left: 0%;
+}
+
+
+
+
+/* switch buttons section */
+.switch-btn2 {
+  position: absolute;
+  top: 7%;
+  left: 7%;
+  width: 7rem;
+  height: 2rem;
+  display: flex;
+  border-radius: 0.5rem;
+  align-items: center;
+  justify-content: space-around;
+  border: none;
+  transition: all 0.3s linear;
+}
+
+.switch-btn2 span {
+  display: inline-block;
+  font-size: 0.85rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  color: #49a6e9;
+}
+
+.switch2 {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  background: #49a6e9;
+  border-radius: 0.5rem;
+  margin: 0;
+  display: block;
+  transition: all 0.3s linear;
+}
+
+.slide2 .switch2 {
+  left: 0%;
 }

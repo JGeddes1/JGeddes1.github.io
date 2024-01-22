@@ -876,6 +876,23 @@ a {
         margin: 0 10px;
         width: auto !important
     }
+        .modal-container {
+            width: 100%;
+            padding-top: 12vh;
+            padding-right: 10vh;
+        }
+    
+        .close-btn {
+            position: absolute;
+            top: 1%;
+            right: 1%;
+            padding-top: 30%;
+            font-size: 200%;
+            padding-right: 10vh;
+            cursor: pointer;
+            color: white;
+            /* Change the color as needed */
+        }
 
     .w3-modal {
         padding-top: 30px
@@ -915,6 +932,22 @@ a {
     .w3-modal-content {
         width: 500px
     }
+    
+    .modal-container {
+            width: 100%;
+            padding-left: 10vh;
+        }
+
+    .close-btn {
+        position: absolute;
+        top: 1%;
+        right: 1%;
+        padding-top: 30%;
+        font-size: 200%;
+        cursor: pointer;
+        color: white;
+        /* Change the color as needed */
+    }
 
     .w3-modal {
         padding-top: 50px
@@ -924,6 +957,12 @@ a {
 @media (min-width:993px) {
     .w3-modal-content {
         width: 900px
+    }
+    
+
+    .modal-container{
+        width: 100%;
+        padding-left: 100px;
     }
 
     .w3-hide-large {
