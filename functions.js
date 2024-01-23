@@ -67,7 +67,7 @@ function getProjectDetails(modalTarget) {
                                                    
                                                     <div id="image_container">
                                                     
-                                                        <img src="GIS_map_images\\terrain_roughness_riley.png" alt="terrain roughness" style="width:100%" float:left;>
+                                                        <img src="GIS_map_images/terrain_roughness_riley.png" alt="terrain roughness" style="width:100%" float:left;>
                                                 </div>
                                                
                                                 <div id="floated">
