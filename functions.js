@@ -49,7 +49,7 @@ function getProjectDetails(modalTarget) {
                     </p>                    
 
                     </p> 
-                <iframe class="map" , src="/map.html" width="100%" height="85%"></iframe>
+                <iframe class="map" , src="map.html" width="100%" height="85%"></iframe>
             `;
         case 'modal2':
             return `
@@ -67,7 +67,7 @@ function getProjectDetails(modalTarget) {
                                                    
                                                     <div id="image_container">
                                                     
-                                                        <img src="/GIS_map_images/terrain_roughness_riley.png" alt="terrain roughness" style="width:100%" float:left;>
+                                                        <img src="GIS_map_images/terrain_roughness_riley.png" alt="terrain roughness" style="width:100%" float:left;>
                                                 </div>
                                                
                                                 <div id="floated">
