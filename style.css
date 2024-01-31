@@ -195,30 +195,12 @@
         .modal-container2 {
           width: 100%;
           padding-top: 30vh;
-          padding-right: 10vh;
+          
           background-color: chocolate;
         }
     
-        .close-btn {
-          position: absolute;
 
-          padding-top: 50%;
-          font-size: 200%;
-          padding-right: 10vh;
-          cursor: pointer;
-          color: white;
-          /* Change the color as needed */
-        }
-        .close-btn2 {
-          position: absolute;
-          
-            padding-top: 52%;
-            font-size: 10%;
-            padding-right: 15%;
-            cursor: pointer;
-            color: white;
-          /* Change the color as needed */
-        }
+
     
         .w3-modal {
           padding-top: 30px
@@ -304,10 +286,10 @@
 }
 
 .close-btn {
-  position: absolute;
+  position: relative;
   top: 1%;
-    right: 1%;
-    font-size: 200%;
+  left: 99%;
+  font-size: 200%;
   cursor: pointer;
   color: white;
   /* Change the color as needed */
@@ -315,10 +297,10 @@
 
 
 .close-btn2 {
-  position: absolute;
+  position: relative;
   top: 1%;
-  right: 1%;
-  font-size: 200%;
+  left: 95%;
+  font-size: 100%;
   cursor: pointer;
   color: white;
   /* Change the color as needed */

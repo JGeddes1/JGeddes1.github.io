@@ -32,6 +32,7 @@ function getProjectDetails(modalTarget) {
     switch (modalTarget) {
         case 'modal1':
             return `
+            <span class="close-btn" onclick="closeModal()">&times;</span>
                 <h4>Unemployment rate in uk 2023 regions Folium Leaflet Map Project</h4>
                   <p>This choropleth map was created from the open government csv data (May 2023) and grabbing a geojson file that has the UK region geometry data. The geojson and region unemployment data is joined
                    and the map is created. The Folium Python package allowed me to create this cool visual leaflet map, then to display it on this website I used Flask. Some other packages involved in the creation of map were:<br>
@@ -50,9 +51,11 @@ function getProjectDetails(modalTarget) {
 
                     </p> 
                 <iframe class="map" , src="map.html" width="100%" height="85%"></iframe>
+                
             `;
         case 'modal2':
             return `
+              <span class="close-btn" onclick="closeModal()">&times;</span>
                 <h4>Topographic Ruggedness Index (Riley) Mesolithic Sites in Iron Gates</h4>
                                                     <h5>Introduction</h5>
                                                     <p>In this project I was focusing on the main burial sites within the Iron gate, from the mesolithic
@@ -77,9 +80,11 @@ function getProjectDetails(modalTarget) {
                                                                             <i class="fa fa-download"></i><a href="PDF Files/Spatial Analysis in GIS.pdf" download> Download PDF </a>
                                                                         </button>
                                                 </div>
+                                              
             `;
         case 'modal3':
             return `
+            <span class="close-btn" onclick="closeModal()">&times;</span>
                   <h4>Site Suitability for a new Hospital in York</h4>
                         <h5>Introduction</h5>
                                                     <p>This project I wanted to figure out where abouts the best place for a new hospital in York if there was tobe a
@@ -115,6 +120,7 @@ function getProjectDetails(modalTarget) {
             `;
        case 'modal4':
             return `
+              <span class="close-btn" onclick="closeModal()">&times;</span>
                   <h4>Strava React Javascript API project</h4>
                         <p>This API project uses the open Strava API to display my workouts on a map for me to view. It displays some API features such as the average heartrate and Date of the run that can be found
                          through the API call. I built the map using React Leaflet to display the data. The main purpose of the map was view my running workouts and to gain experience using an API and learning a bit about how to use React javascript library. </p>
@@ -128,11 +134,13 @@ function getProjectDetails(modalTarget) {
                                             <p class="w3-text-light-white">
                         <a href="https://github.com/JGeddes1/Unemployment-Rate-Folium-Leaflet-Map-Project" target="_blank">
                         <i class="fa fa-github fa-fw w3-text-white w3-xxlarge w3-hover-opacity"></i> GitHub Repository Download</a>
-                    </p>    
+                    </p>
+                    
 
             `;
        case 'modal5':
             return `
+              <span class="close-btn" onclick="closeModal()">&times;</span>
                   <h4>Flood Risk Analysis Of Yorkshire</h4>
                         <p>The city York is notorious for flooding and had recently flooded when I came up with the idea of seeing the level of flood risk in relation to where you live in York/Yorkshire.
                         To build the map I looked and tried to do some flood risk/succesptibnility mapping, but ended up following primarily a flood risk analysis tutorial that you can find the <a href="https://mapscaping.com/flood-risk-modelling/"> link to here</a>. The workflow of how the process is down is shown below:
@@ -150,12 +158,15 @@ function getProjectDetails(modalTarget) {
                         <button class="w3-button w3-light-grey w3-padding-large w3-section">
                           <i class="fa fa-download"></i><a href="/GIS_map_images/Flood RIsk Yorkshire.jpg" download> Download Map</a>
                         </button>
+                   
             `;
        case 'modal6':
             return `
+              <span class="close-btn" onclick="closeModal()">&times;</span>
                   <h4>Flood Risk Analysis Of Yorkshire</h4>
                         <p>Modal 4 </p>
                         <iframe class="map" , src="/GIS_map_images/Flood RIsk Yorkshire.jpg" width="100%" height="85%"></iframe>
+                   
             `;
         default:
             return ''; // Return an empty string for unknown modal targets
@@ -202,6 +213,7 @@ function getProjectDetails2(modalTarget2) {
     switch (modalTarget2) {
         case 'modal1':
             return `
+            <span class="close-btn2" onclick="closeModal2()">&times; close</span>
                 <h4>Battleships Undergraduate Year 1 </h4>
                   <p>As part of my first-year undergraduate assignments, I developed a Battleships game in Java, utilizing the Java.util.swing packages. This project marked one of my early forays into object-oriented programming, prompting me to explore the principles and practices of OOP. The game, a strategic naval battle simulation, not only showcased my growing proficiency in Java programming but also laid the foundation for my understanding of object-oriented design concepts.<br>
                 Skills demonstrated from this project:
@@ -217,10 +229,12 @@ function getProjectDetails2(modalTarget2) {
                         <i class="fa fa-github fa-fw w3-text-white  w3-xxlarge w3-hover-opacity"></i> GitHub Repository Download</a>
                     </p>                    
                     <iframe width="100%" height="500vh" src="https://www.youtube.com/embed/W2ZrgvEHiVc" title="Battleships Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </p> 
+                    </p>
+                    
             `;
         case 'modal2':
             return `
+            <span class="close-btn2" onclick="closeModal2()">&times; close</span>
                 <h4>Task Manager</h4>
                                                     <p>I recently completed a task reminder application using Python, designed to streamline daily productivity. This application leverages
                                                     JSON for storing and organizing task reminders efficiently. The key functionality revolves around notifying me of impending tasks.
@@ -252,9 +266,11 @@ function getProjectDetails2(modalTarget2) {
                                                 
 
                                                 </div>
+                                               
             `;
         case 'modal3':
             return `
+            <span class="close-btn2" onclick="closeModal2()">&times; close</span>
                   <h4>Undergraduate Train Ticket Project </h4>
                         <p>As part of my first-year undergraduate module, I completed a fundamental project in Java, a command-line-based train ticket
                         purchasing system. This project aimed to simulate a simplified ticketing experience, devoid of a graphical user interface,
@@ -276,9 +292,11 @@ function getProjectDetails2(modalTarget2) {
                     </p>                       
                     </ul>
                     </p>
+                    
             `;
        case 'modal4':
             return `
+            <span class="close-btn2" onclick="closeModal2()">&times; close</span>
                   <h4>Python Renaming File Tool (Developed for ADS) </h4>
                         <p>I lead and sole-developed a file renaming tool in python to support staff to convert thousands of file types, in order to meet the company filename policy guidelines for archiving. During the project lifetime, the software was released to staff who provided feedback, which was enacted upon in updated iterations trying to bring concepts such as continuous integration and continuous delivery which are found in agile framework ideologies to my development of the software. </p>
                        <p>Skills demonstrated from this project:
@@ -294,9 +312,11 @@ function getProjectDetails2(modalTarget2) {
                     </p>
                     
                     <iframe width="100%" height="500vh" src="https://www.youtube.com/embed/OVMa97eSxFg" title="File renaming tool demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            `;
+                   
+                    `;
        case 'modal5':
             return `
+            <span class="close-btn2" onclick="closeModal2()">&times; close</span>
                   <h4>Python ship collecting game</h4>
                         <p>I recently completed a dynamic and engaging project inspired by a tutorial from Cameron Astor on Mammoth Interactive. This project involved the development of a simple spaceship collector game using Python and the Pygame package. While following the tutorial, I expanded the scope by incorporating shooting mechanics, asteroid elements, and a lives system, enhancing the overall gameplay experience. This experience not only deepened my understanding of Python programming but also allowed me to explore the creative aspects of game development. The use of Pygame proved to be instrumental in bringing the project to life, showcasing the versatility and power of Python in the context of game design.</p>
                          <p>Skills demonstrated from this project:
@@ -311,9 +331,11 @@ function getProjectDetails2(modalTarget2) {
                         <a href="https://github.com/JGeddes1/Simple-Spaceship-Collecting-Points-Game" target="_blank">
                         <i class="fa fa-github fa-fw w3-text-white w3-xxlarge w3-hover-opacity"></i> GitHub Repository Download</a>
                     </p>
+                
             `;
        case 'modal6':
             return `
+            <span class="close-btn2" onclick="closeModal2()">&times; close</span>
                   <h4>Sudoku</h4>
                         <p>
 As part of my early undergraduate coursework, I developed a Sudoku game in Java, utilizing the Swing library for the graphical user interface. The JFrame displays a 3x3 grid layout, with each cell containing a panel representing a mini 3x3 Sudoku grid. The numbers in each panel are generated and shuffled, creating a visually dynamic representation. While the current implementation lacks the full game logic and user interaction expected in a Sudoku game, it serves as a foundational step in understanding GUI programming in Java.</p>
@@ -321,9 +343,11 @@ As part of my early undergraduate coursework, I developed a Sudoku game in Java,
                         <a href="https://github.com/JGeddes1/Sudoku" target="_blank">
                         <i class="fa fa-github fa-fw w3-text-white w3-xxlarge w3-hover-opacity"></i> GitHub Repository Download</a>
                     </p>
+                  
             `;
        case 'modal7':
             return `
+            <span class="close-btn2" onclick="closeModal2()">&times; close</span>
                   <h4>Basic Javascript Projects From Course</h4>
                         <p>As part of a beginner-level JavaScript course on Udemy, I completed several simple yet foundational projects that enriched my understanding of web development. The course, titled "JavaScript Tutorial for Beginners," guided me through hands-on exercises in creating interactive web applications. I crafted projects that ranged from basic interactive web pages to more dynamic elements like form validation and simple games later on. These exercises honed my skills in JavaScript, emphasizing concepts such as DOM manipulation and event handling. Through practical applications, I gained confidence in leveraging JavaScript to enhance user interactivity and responsiveness on web platforms. This course served as a valuable introduction, setting the stage for further exploration into the world of JavaScript development.</p>
 
@@ -332,14 +356,16 @@ As part of my early undergraduate coursework, I developed a Sudoku game in Java,
                         <a href="https://github.com/JGeddes1/Vanilla-Javascript-Projects" target="_blank">
                         <i class="fa fa-github fa-fw w3-text-white w3-xxlarge w3-hover-opacity"></i> GitHub Repository Download</a>
                     </p>
+                   
                        
             `;
        case 'modal8':
             return `
+            <span class="close-btn2" onclick="closeModal2()">&times; close</span>
                   <h4>Simple Excel to CSV converter</h4>
                         <p>
 I engineered a tool streamlining data processes at ADS by automatically converting Excel sheets into individual CSV files. This application, inspired by the efficiency of a file rename tool, significantly accelerates file conversion tasks. Its implementation reflects a commitment to enhancing workflow efficiency and simplifying data management procedures at ADS.</p>
-                       
+                      
             `;
         default:
             return ''; // Return an empty string for unknown modal targets
