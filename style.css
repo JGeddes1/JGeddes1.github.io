@@ -171,23 +171,24 @@
         .content{
           font-size: 0.55em;
         }
-        /* Modal stuff */
-        .w3-modal-content {
-          margin: 0 10px;
-          width: auto !important
+        /* Modal stuff NOW */
+        .modal-content {
+         
+          width: auto !important;
+         
         }
     
         .modal-container {
           width: 100%;
-          padding-top: 12vh;
+          padding-top: 30vh;
           padding-right: 10vh;
+          background-color: chocolate;
         }
     
         .close-btn {
           position: absolute;
-          top: 1%;
-          right: 1%;
-          padding-top: 30%;
+
+          padding-top: 50%;
           font-size: 200%;
           padding-right: 10vh;
           cursor: pointer;
