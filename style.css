@@ -177,8 +177,19 @@
           width: auto !important;
          
         }
+        .modal-content2 {
+         
+          width: auto !important;
+         
+        }
     
         .modal-container {
+          width: 100%;
+          padding-top: 30vh;
+          padding-right: 10vh;
+          background-color: chocolate;
+        }
+        .modal-container2 {
           width: 100%;
           padding-top: 30vh;
           padding-right: 10vh;
@@ -193,6 +204,16 @@
           padding-right: 10vh;
           cursor: pointer;
           color: white;
+          /* Change the color as needed */
+        }
+        .close-btn2 {
+          position: absolute;
+          
+            padding-top: 52%;
+            font-size: 10%;
+            padding-right: 15%;
+            cursor: pointer;
+            color: white;
           /* Change the color as needed */
         }
     
