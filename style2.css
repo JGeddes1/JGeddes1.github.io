@@ -230,7 +230,7 @@ html {
 }
 
 h1 {
-    font-size: 36px
+    font-size: 6vm
 }
 
 h2 {
@@ -292,7 +292,10 @@ hr {
 
 .w3-image {
     max-width: 100%;
-    height: auto
+    height: auto;
+    display: block;
+    margin: 0 auto;
+        /* Center the image horizontally */
 }
 
 img {
@@ -872,63 +875,10 @@ a {
 }
 
 @media (max-width:600px) {
-    .w3-modal-content {
-        margin: 0 10px;
-        width: auto !important
-    }
-        .modal-container {
-            width: 100%;
-            padding-top: 12vh;
-            padding-right: 10vh;
-        }
-    
-        .close-btn {
-            position: absolute;
-            top: 1%;
-            right: 1%;
-            padding-top: 30%;
-            font-size: 200%;
-            padding-right: 10vh;
-            cursor: pointer;
-            color: white;
-            /* Change the color as needed */
-        }
 
-    .w3-modal {
-        padding-top: 30px
-    }
-
-    .w3-dropdown-hover.w3-mobile .w3-dropdown-content,
-    .w3-dropdown-click.w3-mobile .w3-dropdown-content {
-        position: relative
-    }
-
-    .w3-hide-small {
-        display: none !important
-    }
-
-    .w3-mobile {
-        display: block;
-        width: 100% !important
-    }
-
-    .w3-bar-item.w3-mobile,
-    .w3-dropdown-hover.w3-mobile,
-    .w3-dropdown-click.w3-mobile {
-        text-align: center
-    }
-
-    .w3-dropdown-hover.w3-mobile,
-    .w3-dropdown-hover.w3-mobile .w3-btn,
-    .w3-dropdown-hover.w3-mobile .w3-button,
-    .w3-dropdown-click.w3-mobile,
-    .w3-dropdown-click.w3-mobile .w3-btn,
-    .w3-dropdown-click.w3-mobile .w3-button {
-        width: 100%
-    }
 }
 
-@media (max-width:768px) {
+@media (max-width:790px) {
     .w3-modal-content {
         width: 500px
     }

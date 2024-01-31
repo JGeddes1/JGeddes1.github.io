@@ -135,7 +135,98 @@
      #main {
        margin-left: 0
      }
+         .w3-jumbo {
+           font-size: 3em !important;
+          
+         }
 
+         .w3-hide-small{
+          font-size: 15px;
+          
+         }
+
+         .w3-image{
+          width: 100%;
+          height: 575px;
+          object-fit: cover;
+          object-position: bottom;
+         }
+             /* Adjust top position for smaller screens */
+    .text-overlay {
+        top: 60%; /* You can adjust the percentage accordingly */
+    }
+
+        .w3-content {
+          font-size: 0.8rem;
+          
+      
+        }
+
+        /* This moves padding in sections e.g about me below */
+        .w3-padding-64 {
+          padding-top: 32px !important;
+          padding-bottom: 32px !important
+        } 
+        /* MOVING INTO EDUCATION AREA */
+        .content{
+          font-size: 0.55em;
+        }
+        /* Modal stuff */
+        .w3-modal-content {
+          margin: 0 10px;
+          width: auto !important
+        }
+    
+        .modal-container {
+          width: 100%;
+          padding-top: 12vh;
+          padding-right: 10vh;
+        }
+    
+        .close-btn {
+          position: absolute;
+          top: 1%;
+          right: 1%;
+          padding-top: 30%;
+          font-size: 200%;
+          padding-right: 10vh;
+          cursor: pointer;
+          color: white;
+          /* Change the color as needed */
+        }
+    
+        .w3-modal {
+          padding-top: 30px
+        }
+    
+        .w3-dropdown-hover.w3-mobile .w3-dropdown-content,
+        .w3-dropdown-click.w3-mobile .w3-dropdown-content {
+          position: relative
+        }
+    
+        .w3-hide-small {
+          display: none !important
+        }
+    
+        .w3-mobile {
+          display: block;
+          width: 100% !important
+        }
+    
+        .w3-bar-item.w3-mobile,
+        .w3-dropdown-hover.w3-mobile,
+        .w3-dropdown-click.w3-mobile {
+          text-align: center
+        }
+    
+        .w3-dropdown-hover.w3-mobile,
+        .w3-dropdown-hover.w3-mobile .w3-btn,
+        .w3-dropdown-hover.w3-mobile .w3-button,
+        .w3-dropdown-click.w3-mobile,
+        .w3-dropdown-click.w3-mobile .w3-btn,
+        .w3-dropdown-click.w3-mobile .w3-button {
+          width: 100%
+        }
 
    }
 
@@ -284,6 +375,7 @@
                 border-radius: 8px;
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
                 text-align: center;
+                position: relative;
 }
 
 
@@ -292,13 +384,16 @@ welcome-img {
             border-radius: 50%;
             margin-bottom: 20px;
         }
+/* Style for the text overlay */
 .text-overlay {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-        }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  /* Adjust text color based on your image */
+}
 .learn-more-btn {
             background-color: grey;
             color: #fff;
