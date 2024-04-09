@@ -367,7 +367,8 @@
 
 
 .degree1,
-.degree2 {
+.degree2,
+.degree3 {
   width: 48%;
   /* Adjust width as needed and leave some space for margins */
   box-sizing: border-box;
@@ -376,6 +377,16 @@
   /* Add some margin between the two content boxes */
 }
 
+.emp1,
+.emp2,
+.emp3 {
+  width: 30%;
+  /* Adjust width as needed and leave some space for margins */
+  box-sizing: border-box;
+  margin-bottom: 5px;
+
+  /* Add some margin between the two content boxes */
+}
 
 .welcome-container{
               max-width: 100%;

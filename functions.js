@@ -211,6 +211,28 @@ function closeModal2() {
 // Function to get the content for a specific project modal
 function getProjectDetails2(modalTarget2) {
     switch (modalTarget2) {
+        case 'modal10':
+            return `
+            <span class="close-btn2" onclick="closeModal2()">&times; close</span>
+                <h4>Change Audio Device C# Project</h4>
+                  <p>A simple change audio script that runs in the background of my pc. This was my first major project using c# and had to understand importing libraries and the different style of coding
+                  that c# involves compared to python.<br>
+                Skills demonstrated from this project:
+                    <ul>
+                    <li>Visual Studio 2022</li>
+                    <li>AudioSwitcher.AudioApi</li>
+                    <li>WindowsInput</li>
+                    
+                    </ul>
+                    
+                    <p class="w3-text-light-white">
+                        <a href="https://github.com/JGeddes1/ChangeAudioDevice" target="_blank">
+                        <i class="fa fa-github fa-fw w3-text-white  w3-xxlarge w3-hover-opacity"></i> GitHub Repository Download</a>
+                    </p>                    
+                    
+                    </p>
+                    
+            `;
         case 'modal1':
             return `
             <span class="close-btn2" onclick="closeModal2()">&times; close</span>
