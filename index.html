@@ -5,22 +5,22 @@
     <title>Jamie Geddes Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style2.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cleaned-css/style.css">
+    <!-- <link rel="stylesheet" href="cleaned-css/style2.css"> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
     
     
 
 </head>
 
-<body class="w3-black">
 
     <!-- Icon Bar (Sidebar - hidden on small screens) -->
     <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
         <!-- Avatar image in top left corner -->
         <img src="logo.png" style="width:100%">
-        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
             <i class="fa fa-home w3-xxlarge"></i>
             <p>Home</p>
         </a>
@@ -48,7 +48,7 @@
     </nav>
 
     <!-- Navbar on small screens (Hidden on medium and large screens) -->
-    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <!-- <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
         <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
             <a href="#" class="w3-bar-item w3-button" style="width:25% !important">Home</a>
             <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">About</a>
@@ -57,10 +57,44 @@
             <a href="#conferences/papers" class="w3-bar-item w3-button" style="width:25% !important">Papers /<br>Conferences</a>
             <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">Contact</a>
         </div>
-    </div>
+    </div> -->
 
      <!--Welcome to bit  -->
         <header class="welcome-container" id="home">
+            <nav class="w3-hide-large w3-hide-medium transparent ">
+            
+            
+                <!-- <button class="sidebar-toggle w3-hide-large w3-hide-medium transparent">
+                    <i class="fas fa-bars"></i>
+                </button> -->
+            
+            
+            
+                <aside class="sidebar w3-hide-large w3-hide-medium transparent">
+                    <div class="sidebar-heading">
+                        <h1 id="navlogo"><img src="logonavbar.png" style="width:50%; padding-left: 10%; "></h1>
+                        <button class="close-btn-nav">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                                
+                    <div class=" w3-opacity w3-hover-opacity-off w3-center w3-small">
+                        <a href="#" class="w3-bar-item w3-button" style="width:25% !important">Home</a>
+                        <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">About</a>
+                        <a href="#GIS" class="w3-bar-item w3-button" style="width:45% !important">Geospatial Data Projects </a>
+                        <a href="#coding" class="w3-bar-item w3-button" style="width:45% !important">General Coding Projects</a>
+                        <a href="#conferences/papers" class="w3-bar-item w3-button" style="width:25% !important">Papers /<br>Conferences</a>
+                        <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">Contact</a>
+                    </div>
+                </aside>
+            </nav>
+            
+            <div class="burger-nav">
+                <!-- Burger nav button -->
+                <button class="sidebar-toggle w3-hide-large w3-hide-medium transparent">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
             
             <img src="chris-j-davis-PT_9ux0j-x4-unsplash.jpg" alt="boy" class="w3-image" width="100%"
                 height="auto">
@@ -70,7 +104,7 @@
                 <p>Welcome to My Portfolio Website Scroll down to find out more and see my projects.</p>
                 <a href="#about" class="learn-more-btn" >Learn More</a>
             </div>
-           
+        
         </header>
     <!-- Page Content -->
     <div class="w3-padding-large" id="main">
@@ -79,8 +113,8 @@
 
         <!-- About Section -->
         <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-            <h1 class="w3-text-light-grey"><strong>Information About Me</strong></h1>
-            <h2 class="w3-text-light-grey">Education</h2>
+            <h1 class="text-light-grey"><strong>Information About Me</strong></h1>
+            <h2 class="text-light-grey">Education</h2>
             <div class="Education-container">
                 <div class="Education-image">
                     <img src="university_logos/york uni image.png" alt="Education Image">
@@ -141,10 +175,10 @@
                 </div>
             </div>
             
-            <h2 class="w3-text-light-grey" style="text-align: right;">Employment History</h2>
+            <h2 class="text-light-grey employmentheader" >Employment History</h2>
             <div class="Education-container">
 
-                <div class="content">
+                <div class="content-jobs">
                     <div class="emp1">
                         <p>
                             <strong>-Archaeology Data Service, Role: Digital Archives Assistant </strong><br>
@@ -219,7 +253,7 @@
 
 
 
-                        <h2 class="w3-text-light-grey" style="text-align: left;">Qualifications/Certifications</h2>
+                        <h2 class="text-light-grey" style="text-align: left;">Qualifications/Certifications</h2>
                         <div class="Education-container">
                             
                             <div class="Qualification_Image">
@@ -262,46 +296,46 @@
      
             
     
-            <h2 class="w3-padding-16 w3-text-light-grey">Top Skills</h2>
+            <h2 class="w3-padding-16 text-light-grey">Top Skills</h2>
             <p class="w3-wide">Python</p>
             <div class="w3-white">
-                <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+                <div class="blue" style="height:28px;width:0%;" style="--width: 95%;"></div>
             </div>
             <p class="w3-wide">C#</p>
             <div class="w3-white">
-                <div class="w3-dark-grey" style="height:28px;width:55%"></div>
+                <div class="blue" style="height:28px;width:55%"></div>
             </div>
             <p class="w3-wide">Java</p>
             <div class="w3-white">
-                <div class="w3-dark-grey" style="height:28px;width:55%"></div>
+                <div class="blue" style="height:28px;width:55%"></div>
             </div>
             <p class="w3-wide">HTML, CSS and JavaScript</p>
             <div class="w3-white">
-                <div class="w3-dark-grey" style="height:28px;width:76%"></div>
+                <div class="blue" style="height:28px;width:76%"></div>
             </div>
             <p class="w3-wide">SQL</p>
             <div class="w3-white">
-                <div class="w3-dark-grey" style="height:28px;width:88%"></div>
+                <div class="blue" style="height:28px;width:88%"></div>
             </div>
             <p class="w3-wide">Microsoft Azure</p>
             <div class="w3-white">
-                <div class="w3-dark-grey" style="height:28px;width:50%"></div>
+                <div class="blue" style="height:28px;width:50%"></div>
             </div>
             <p class="w3-wide">Docker</p>
             <div class="w3-white">
-                <div class="w3-dark-grey" style="height:28px;width:5%"></div>
+                <div class="blue" style="height:28px;width:5%"></div>
             </div>
             <p class="w3-wide">Github</p>
             <div class="w3-white">
-                <div class="w3-dark-grey" style="height:28px;width:90%"></div>
+                <div class="blue" style="height:28px;width:90%"></div>
             </div>
             <p class="w3-wide">Geospatial tools such as ArcGIS Pro an QGIS</p>
             <div class="w3-white">
-                <div class="w3-dark-grey" style="height:28px;width:70%"></div>
+                <div class="blue" style="height:28px;width:70%"></div>
             </div>
             <p class="w3-wide">Excel</p>
             <div class="w3-white">
-                <div class="w3-dark-grey" style="height:28px;width:70%"></div>
+                <div class="blue" style="height:28px;width:70%"></div>
             </div><br>
 
             <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
@@ -312,7 +346,7 @@
 
             </div>
 
-            <h2 class="w3-text-light-grey">Extra Courses Completed</h2>
+            <h2 class="text-light-grey">Extra Courses Completed</h2>
             <hr style="width:200px" class="w3-opacity">
             
             
@@ -343,7 +377,7 @@
                 
             
             </div>
-            <h2 class="w3-text-light-grey">Download Full CV</h2>
+            <h2 class="text-light-grey">Download Full CV</h2>
             <button class="w3-button w3-light-grey w3-padding-large w3-section">
                 <i class="fa fa-download"  ></i><a href="CV/Jamie Geddes_CV.docx" download> Download Resume </a>
             </button>
@@ -357,8 +391,8 @@
 
         <!-- Portfolio Section -->
         <div class="w3-padding-64 w3-content" id="GIS">
-            <h2 class="w3-text-light-grey">My Geospatial Data Related Projects 🌏</h2>
-            <p class="w3-text-light-grey">Click on the images to get download and sometimes more information.</p>
+            <h2 class="text-light-grey">My Geospatial Data Related Projects 🌏</h2>
+            <p class="text-light-grey">Click on the images to get download and sometimes more information.</p>
             <hr style="width:200px" class="w3-opacity">
            
             <!-- Grid for GIS -->
@@ -421,10 +455,10 @@
         </div>
         <!--Coding Portfolio Section -->
         <div class="w3-padding-64 w3-content" id="coding">
-            <h2 class="w3-text-light-grey">My General Coding Projects</h2>
-            <p class="w3-text-light-grey">Click on the images/videos to get a link to the repository and more information.</p>
-            <p class="w3-text-light-grey">Futher projects can be found at mygithub account.</p>
-            <p class="w3-text-light-grey">
+            <h2 class="text-light-grey">My General Coding Projects</h2>
+            <p class="text-light-grey">Click on the images/videos to get a link to the repository and more information.</p>
+            <p class="text-light-grey">Futher projects can be found at mygithub account.</p>
+            <p class="text-light-grey">
                 <a href="https://github.com/JGeddes1" target="_blank">
                 <i class="fa fa-github fa-fw w3-text-grey w3-xxlarge w3-hover-opacity"></i> GitHub</a>
             </p>
@@ -519,11 +553,11 @@
 
                     <!-- Papers Section -->
                     <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="conferences/papers">
-                        <h2 class="w3-text-light-grey">Papers and Conferences Attended:</h2>
+                        <h2 class="text-light-grey">Papers and Conferences Attended:</h2>
                         <hr style="width:200px" class="w3-opacity">
 
                     
-                        <div class="w3-row  w3-padding-16 w3-section w3-text-light-grey">
+                        <div class="w3-row  w3-padding-16 w3-section text-light-grey">
 
                             <p><ul>
                                 <li><em>Attended and presented at CAA 2023 in Amsterdam.</em></li>
@@ -566,7 +600,7 @@
                         <hr style="width:200px" class="w3-opacity">
                     
                         <div class="w3-section">
-                            <h2 class="w3-text-light-grey">Contact Me</h2>
+                            <h2 class="text-light-grey">Contact Me</h2>
                             <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>UK</p>
                             <p>
                                 <a href="https://www.linkedin.com/in/jamie-geddes-5819671a4/" target="_blank">

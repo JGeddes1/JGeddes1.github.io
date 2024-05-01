@@ -427,3 +427,24 @@ btn2.addEventListener('click',function trigger(e) {
    }
 });
 
+
+
+const sideBar = document.querySelector('.sidebar');
+const togglBtn = document.querySelector('.sidebar-toggle');
+const closeBtnSidebar = document.querySelector('.close-btn-nav');
+
+togglBtn.addEventListener('click', function(){
+    sideBar.classList.toggle('show-sidebar');
+    togglBtn.classList.toggle('hide-icon');
+   
+});
+
+
+closeBtnSidebar.addEventListener('click', function(){
+    sideBar.classList.remove('show-sidebar');
+    togglBtn.classList.toggle('hide-icon');
+});
+
+
+
+

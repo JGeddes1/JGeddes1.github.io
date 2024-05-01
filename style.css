@@ -25,7 +25,10 @@
      background-color: #f1f1f1;
    }
 
-
+   .purple{
+    color:#371f57 ;
+    background-color: #371f57;
+   }
 
 
 
@@ -135,6 +138,13 @@
      #main {
        margin-left: 0
      }
+    .content-jobs {
+           flex: 0 0 100%;
+           /* 70% width of the container */
+           padding-right: 20px;
+           /* Add some space between text and image */
+         }
+
      h2{
       font-size: 1.7em;
      }
@@ -314,33 +324,49 @@
 
 
 .Education-container{
-    max-width: 100%;
-    margin: 20px auto;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
     background-color: #f5f5f5;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
+    flex-wrap: wrap;
     
       /* Stack items vertically */
   }
 
-.Education-image{
-    flex: 0 0 20%;
-      /* 20% width of the container */
-    /* margin-right: 30px; */
-    flex-direction: column;
-    
-  }
+.content-jobs {
+    flex: 0 0 70%; /* 70% width of the container */
+    padding-right: 20px; /* Add some space between text and image */
+}
 
+.Education-image {
+  flex: 0 0 30%;
+  /* 30% width of the container */
+  display: flex;
+  justify-content: center;
+  /* Center the image horizontally */
+  align-items: center;
+  /* Center the image vertically */
+  background-color: #49a6e9;
+}
 
 .Education-image img {
-            width: 100%;
-            height: auto;
-            border-radius: 8%;
-            padding: 10%;
-            float: right;
-        }
+  max-width: 50%;
+  /* Ensure image does not exceed its container */
+  height: auto;
+  /* Maintain aspect ratio */
+  border-radius: 8%;
+  max-height: 300px;
+  /* Set a maximum height for the image */
+  width: auto;
+  /* Reset width to auto for responsiveness */
+  padding: 10px;
+  /* Add some padding around the image */
+}
+
 
 .Qualification_Image{
     flex: 0 0 40%;
@@ -364,7 +390,9 @@
       justify-content: space-between;
       /* Add space between the two content boxes */
         }
-
+.content-jobs{
+  margin-top: 20px;
+}
 
 .degree1,
 .degree2,
@@ -380,10 +408,11 @@
 .emp1,
 .emp2,
 .emp3 {
-  width: 32%;
+  width: 100%;
   /* Adjust width as needed and leave some space for margins */
   box-sizing: border-box;
   margin-bottom: 5px;
+  padding: 20px;
 
   /* Add some margin between the two content boxes */
 }

@@ -874,9 +874,6 @@ a {
     }
 }
 
-@media (max-width:600px) {
-
-}
 
 @media (max-width:790px) {
     .w3-modal-content {
@@ -1441,30 +1438,6 @@ a {
     padding: 12px 24px !important
 }
 
-.w3-padding-16 {
-    padding-top: 16px !important;
-    padding-bottom: 16px !important
-}
-
-.w3-padding-24 {
-    padding-top: 24px !important;
-    padding-bottom: 24px !important
-}
-
-.w3-padding-32 {
-    padding-top: 32px !important;
-    padding-bottom: 32px !important
-}
-
-.w3-padding-48 {
-    padding-top: 48px !important;
-    padding-bottom: 48px !important
-}
-
-.w3-padding-64 {
-    padding-top: 64px !important;
-    padding-bottom: 64px !important
-}
 
 .w3-padding-top-64 {
     padding-top: 64px !important
@@ -1565,7 +1538,7 @@ a {
     color: #757575 !important
 }
 
-.w3-text-light-grey,
+.text-light-grey,
 .w3-hover-text-light-grey:hover,
 .w3-text-light-gray,
 .w3-hover-text-light-gray:hover {
