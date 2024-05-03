@@ -381,7 +381,7 @@
 }
 
 .welcome-container{
-              max-width: 100%;
+                max-width: 100%;
                 border-radius: 8px;
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
                 text-align: center;
@@ -401,6 +401,9 @@
             
         }
 
+        .padding-main{
+          padding: 12px 24px !important
+        }
 
 @keyframes pulse {
   0% {
@@ -839,7 +842,7 @@ a {
       top: 50%;
       left: 50%;
       width: 50%;
-      transform: translate(-30%, -50%);
+      transform: translate(-50%, -50%);
       text-align: center;
       color: white;
       /* Adjust text color based on your image */
@@ -987,6 +990,13 @@ a {
 }
 
 
+.welcome-text{
+  font-size: 5vw;
+}
+
+.welcome-text-small {
+  font-size: 0.8vw;
+}
 
 /* .w3-justify {
   text-align: justify !important
