@@ -213,7 +213,7 @@ function getProjectDetails2(modalTarget2) {
     switch (modalTarget2) {
         case 'modal10':
             return `
-            <span class="close-btn2" onclick="closeModal2()">&times; close</span>
+            <span class="close-btn" onclick="closeModal2()">&times; close</span>
                 <h4>Change Audio Device C# Project</h4>
                   <p>A simple change audio script that runs in the background of my pc. This was my first major project using c# and had to understand importing libraries and the different style of coding
                   that c# involves compared to python.<br>
@@ -235,7 +235,7 @@ function getProjectDetails2(modalTarget2) {
             `;
         case 'modal1':
             return `
-            <span class="close-btn2" onclick="closeModal2()">&times; close</span>
+            <span class="close-btn" onclick="closeModal2()">&times;</span>
                 <h4>Battleships Undergraduate Year 1 </h4>
                   <p>As part of my first-year undergraduate assignments, I developed a Battleships game in Java, utilizing the Java.util.swing packages. This project marked one of my early forays into object-oriented programming, prompting me to explore the principles and practices of OOP. The game, a strategic naval battle simulation, not only showcased my growing proficiency in Java programming but also laid the foundation for my understanding of object-oriented design concepts.<br>
                 Skills demonstrated from this project:
@@ -256,7 +256,7 @@ function getProjectDetails2(modalTarget2) {
             `;
         case 'modal2':
             return `
-            <span class="close-btn2" onclick="closeModal2()">&times; close</span>
+            <span class="close-btn" onclick="closeModal2()">&times;</span>
                 <h4>Task Manager</h4>
                                                     <p>I recently completed a task reminder application using Python, designed to streamline daily productivity. This application leverages
                                                     JSON for storing and organizing task reminders efficiently. The key functionality revolves around notifying me of impending tasks.
@@ -292,7 +292,7 @@ function getProjectDetails2(modalTarget2) {
             `;
         case 'modal3':
             return `
-            <span class="close-btn2" onclick="closeModal2()">&times; close</span>
+            <span class="close-btn" onclick="closeModal2()">&times;</span>
                   <h4>Undergraduate Train Ticket Project </h4>
                         <p>As part of my first-year undergraduate module, I completed a fundamental project in Java, a command-line-based train ticket
                         purchasing system. This project aimed to simulate a simplified ticketing experience, devoid of a graphical user interface,
@@ -318,7 +318,7 @@ function getProjectDetails2(modalTarget2) {
             `;
        case 'modal4':
             return `
-            <span class="close-btn2" onclick="closeModal2()">&times; close</span>
+            <span class="close-btn" onclick="closeModal2()">&times;</span>
                   <h4>Python Renaming File Tool (Developed for ADS) </h4>
                         <p>I lead and sole-developed a file renaming tool in python to support staff to convert thousands of file types, in order to meet the company filename policy guidelines for archiving. During the project lifetime, the software was released to staff who provided feedback, which was enacted upon in updated iterations trying to bring concepts such as continuous integration and continuous delivery which are found in agile framework ideologies to my development of the software. </p>
                        <p>Skills demonstrated from this project:
@@ -338,7 +338,7 @@ function getProjectDetails2(modalTarget2) {
                     `;
        case 'modal5':
             return `
-            <span class="close-btn2" onclick="closeModal2()">&times; close</span>
+            <span class="close-btn" onclick="closeModal2()">&times;</span>
                   <h4>Python ship collecting game</h4>
                         <p>I recently completed a dynamic and engaging project inspired by a tutorial from Cameron Astor on Mammoth Interactive. This project involved the development of a simple spaceship collector game using Python and the Pygame package. While following the tutorial, I expanded the scope by incorporating shooting mechanics, asteroid elements, and a lives system, enhancing the overall gameplay experience. This experience not only deepened my understanding of Python programming but also allowed me to explore the creative aspects of game development. The use of Pygame proved to be instrumental in bringing the project to life, showcasing the versatility and power of Python in the context of game design.</p>
                          <p>Skills demonstrated from this project:
@@ -357,7 +357,7 @@ function getProjectDetails2(modalTarget2) {
             `;
        case 'modal6':
             return `
-            <span class="close-btn2" onclick="closeModal2()">&times; close</span>
+            <span class="close-btn" onclick="closeModal2()">&times; </span>
                   <h4>Sudoku</h4>
                         <p>
 As part of my early undergraduate coursework, I developed a Sudoku game in Java, utilizing the Swing library for the graphical user interface. The JFrame displays a 3x3 grid layout, with each cell containing a panel representing a mini 3x3 Sudoku grid. The numbers in each panel are generated and shuffled, creating a visually dynamic representation. While the current implementation lacks the full game logic and user interaction expected in a Sudoku game, it serves as a foundational step in understanding GUI programming in Java.</p>
@@ -369,7 +369,7 @@ As part of my early undergraduate coursework, I developed a Sudoku game in Java,
             `;
        case 'modal7':
             return `
-            <span class="close-btn2" onclick="closeModal2()">&times; close</span>
+            <span class="close-btn" onclick="closeModal2()">&times; </span>
                   <h4>Basic Javascript Projects From Course</h4>
                         <p>As part of a beginner-level JavaScript course on Udemy, I completed several simple yet foundational projects that enriched my understanding of web development. The course, titled "JavaScript Tutorial for Beginners," guided me through hands-on exercises in creating interactive web applications. I crafted projects that ranged from basic interactive web pages to more dynamic elements like form validation and simple games later on. These exercises honed my skills in JavaScript, emphasizing concepts such as DOM manipulation and event handling. Through practical applications, I gained confidence in leveraging JavaScript to enhance user interactivity and responsiveness on web platforms. This course served as a valuable introduction, setting the stage for further exploration into the world of JavaScript development.</p>
 
@@ -383,7 +383,7 @@ As part of my early undergraduate coursework, I developed a Sudoku game in Java,
             `;
        case 'modal8':
             return `
-            <span class="close-btn2" onclick="closeModal2()">&times; close</span>
+            <span class="close-btn" onclick="closeModal2()">&times; </span>
                   <h4>Simple Excel to CSV converter</h4>
                         <p>
 I engineered a tool streamlining data processes at ADS by automatically converting Excel sheets into individual CSV files. This application, inspired by the efficiency of a file rename tool, significantly accelerates file conversion tasks. Its implementation reflects a commitment to enhancing workflow efficiency and simplifying data management procedures at ADS.</p>

@@ -192,7 +192,7 @@
          
         }
     
-        .modal-container {
+        /* .modal-container {
           width: 100%;
           padding-top: 30vh;
           padding-right: 10vh;
@@ -203,7 +203,7 @@
           padding-top: 30vh;
           
           background-color: chocolate;
-        }
+        } */
     
         .w3-hide-small {
           display: none !important
@@ -1278,9 +1278,37 @@ nav {
         }
 
   .modal-content {
-    position: relative;
-    transform: translate(10%, -20%);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 50%;
+    transform: translate(0%, 10%);
+    text-align: center;
+    color: white;
+    
 
+}
+    .modal-content2 {
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      width: 50%;
+      transform: translate(0%, 10%);
+      text-align: center;
+      color: white;
+  
+  
+    }
+
+
+.close-btn {
+  position: relative;
+  top: 0%;
+  left: 50%;
+  font-size: 200%;
+  cursor: pointer;
+  color: white;
+  /* Change the color as needed */
 }
 }
 
