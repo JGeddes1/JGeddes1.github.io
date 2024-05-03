@@ -446,5 +446,28 @@ closeBtnSidebar.addEventListener('click', function(){
 });
 
 
+ var barsAnimated = false;
 
+        function animateBarsIfVisible() {
+            if (!barsAnimated && isElementInViewport(document.querySelector('.blue'))) {
+                var bars = document.querySelectorAll('.blue');
+                bars.forEach(function(bar) {
+                    var width = bar.style.width; // Get the desired width from inline style
+                    bar.style.width = width;
+                    bar.classList.add("animation"); // Reset width to trigger animation
+                });
+                barsAnimated = true; // Mark bars as animated to prevent animation on subsequent scrolls
+            }
+        }
 
+        function isElementInViewport(el) {
+            var rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        window.addEventListener('scroll', animateBarsIfVisible);

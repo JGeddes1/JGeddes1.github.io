@@ -26,7 +26,7 @@
   .blue{
     color:#6091e3;
     background-color: #6091e3;
-    animation: grow 1s ease-out forwards;
+    transition: width 1s;
    }
   @keyframes grow {
     from {
@@ -34,8 +34,13 @@
     }
 
     to {
-      width: var(--width);
+      width: var(width);
     }
+  }
+
+
+  .animation {
+    animation: grow 2.5s ease-out forwards;
   }
 
 
@@ -1187,6 +1192,44 @@ nav {
 .employmentheader {
   text-align: right;
 }
+
+
+
+
+@media screen and (min-width: 481px) {
+ .project-image{
+  width: 10%;
+ }
+
+
+            .container {
+              position: relative;
+              width: 100%;
+            }
+
+        .Education-image {
+          flex: 0 0 100%;
+          /* 30% width of the container */
+          display: flex;
+          justify-content: center;
+          /* Center the image horizontally */
+          align-items: center;
+          /* Center the image vertically */
+          background-color: #49a6e9;
+        }
+
+        #main{
+          margin-left: 200px;
+        }
+}
+
+
+
+
+
+
+
+
 @media screen and (max-width: 480px) {
 
 
@@ -1233,6 +1276,12 @@ nav {
       
           
         }
+
+  .modal-content {
+    position: relative;
+    transform: translate(10%, -20%);
+
+}
 }
 
 
