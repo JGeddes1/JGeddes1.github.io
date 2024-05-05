@@ -360,6 +360,7 @@
 
 .Qualification_Image{
     flex: 0 0 40%;
+    max-width: 500px;
       /* 30% width of the container */
     /* margin-right: 30px; */
  
