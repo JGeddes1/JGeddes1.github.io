@@ -397,35 +397,35 @@ I engineered a tool streamlining data processes at ADS by automatically converti
 
 
 
-const btn = document.querySelector('.switch-btn');
-const video = document.querySelector('.video-container');
+// const btn = document.querySelector('.switch-btn');
+// const video = document.querySelector('.video-container');
 
 
-btn.addEventListener('click',function trigger(e) {
-   if (!btn.classList.contains('slide')) {
-       btn.classList.add('slide');
-       video.play();
-   }
-   else{
-       btn.classList.remove('slide');
-       video.pause();
-   }
-});
+// btn.addEventListener('click',function trigger(e) {
+//    if (!btn.classList.contains('slide')) {
+//        btn.classList.add('slide');
+//        video.play();
+//    }
+//    else{
+//        btn.classList.remove('slide');
+//        video.pause();
+//    }
+// });
 
-const btn2 = document.querySelector('.switch-btn2');
-const video2 = document.querySelector('.video-container2');
+// const btn2 = document.querySelector('.switch-btn2');
+// const video2 = document.querySelector('.video-container2');
 
 
-btn2.addEventListener('click',function trigger(e) {
-   if (!btn2.classList.contains('slide2')) {
-       btn2.classList.add('slide2');
-       video2.play();
-   }
-   else{
-       btn2.classList.remove('slide2');
-       video2.pause();
-   }
-});
+// btn2.addEventListener('click',function trigger(e) {
+//    if (!btn2.classList.contains('slide2')) {
+//        btn2.classList.add('slide2');
+//        video2.play();
+//    }
+//    else{
+//        btn2.classList.remove('slide2');
+//        video2.pause();
+//    }
+// });
 
 
 

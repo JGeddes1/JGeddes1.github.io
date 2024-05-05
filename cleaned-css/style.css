@@ -143,7 +143,7 @@
 
 
    /* Remove margins from "page content" on small screens */
-   @media only screen and (max-width: 600px) {
+   @media only screen and (max-width: 680px) {
      #main {
        margin-left: 0
      }
@@ -852,8 +852,14 @@ a {
 .w3-half {
   float: left;
   width: 33%;
+
 }
 
+.border{
+      border: 2px solid;
+        border-image: linear-gradient(to right, #49a6e9, #8dc4eb);
+        border-image-slice: 1;
+}
 
     .text-overlay {
       position: absolute;
@@ -881,6 +887,7 @@ a {
       /* Center vertically */
       height: auto;
       /* Set height of container to viewport height */
+      
 }
 
 .w3-top {
@@ -1265,7 +1272,7 @@ nav {
   
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 680px) {
  .project-image{
   width: 10%;
  }
@@ -1306,7 +1313,7 @@ nav {
 
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
 
 
     .text-overlay {
@@ -1361,6 +1368,7 @@ nav {
     transform: translate(0%, 10%);
     text-align: center;
     color: white;
+    
     
 
 }
