@@ -213,7 +213,7 @@ function getProjectDetails2(modalTarget2) {
     switch (modalTarget2) {
         case 'modal10':
             return `
-            <span class="close-btn" onclick="closeModal2()">&times; close</span>
+            <span class="close-btn" onclick="closeModal2()">&times;</span>
                 <h4>Change Audio Device C# Project</h4>
                   <p>A simple change audio script that runs in the background of my pc. This was my first major project using c# and had to understand importing libraries and the different style of coding
                   that c# involves compared to python.<br>

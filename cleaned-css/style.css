@@ -105,6 +105,15 @@
    }
    
 
+      /* Add Animation */
+   .modal-content2{
+     -webkit-animation-name: zoom;
+     -webkit-animation-duration: 0.6s;
+     animation-name: zoom;
+     animation-duration: 0.6s;
+   }
+   
+
     
    
 
@@ -249,6 +258,8 @@
   background-color: rgb(39, 39, 39);
   padding: 20px;
   border-radius: 10px;
+  color: white;
+
 }
 .modal-content2 {
   width: 80%;
@@ -260,6 +271,7 @@
   background-color: rgb(39, 39, 39);
   padding: 20px;
   border-radius: 10px;
+  color: white;
 }
 
 .close-btn {
@@ -299,7 +311,12 @@
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    /* aligns items vertically */
+    align-items: center;
+    /* aligns items horizontally */
+    
     
       /* Stack items vertically */
   }
@@ -1242,6 +1259,8 @@ nav {
             
     ul {
         list-style-type: none;
+          padding: 0;
+            margin: 0;
       }                      
   
 }
