@@ -1331,10 +1331,22 @@ nav {
   color: white;
   /* Change the color as needed */
 }
+
+        ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+        }
 }
 
 
 @media screen and (max-width: 320px) {
+
+      ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+        }
   
 
   .text-overlay {
@@ -1364,7 +1376,7 @@ nav {
     }
 
                         .Education-container {
-                          font-size: 0.7rem;
+                          font-size: 0.8rem;
             
             
                         }
