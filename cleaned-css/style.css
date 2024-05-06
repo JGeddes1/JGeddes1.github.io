@@ -6,10 +6,108 @@
      font-family: "Montserrat", sans-serif
    }
 
+   /* BUTTONS START */
+     .buttons:hover {
+       color: #000 !important;
+       background-color: #ccc !important
+     }
+
+     .buttons {
+       border: none;
+       display: inline-block;
+       padding: 8px 16px;
+       vertical-align: middle;
+       overflow: hidden;
+       text-decoration: none;
+       color: inherit;
+       background-color: inherit;
+       text-align: center;
+       cursor: pointer;
+       white-space: nowrap
+     }
+  
+  
+     .buttons {
+       -webkit-touch-callout: none;
+       -webkit-user-select: none;
+       -khtml-user-select: none;
+       -moz-user-select: none;
+       -ms-user-select: none;
+       user-select: none
+     }
+  
+  
+     .buttons:disabled {
+       cursor: not-allowed;
+       opacity: 0.3
+     }
+
+    /* switch buttons section */
+    .switch-btn {
+      position: absolute;
+      top: 7%;
+      left: 7%;
+      width: 7rem;
+      height: 2rem;
+      display: flex;
+      border-radius: 0.5rem;
+      align-items: center;
+      justify-content: space-around;
+      border: none;
+      transition: all 0.3s linear;
+    }
+
+    .switch-btn span {
+      display: inline-block;
+      font-size: 0.85rem;
+      cursor: pointer;
+      text-transform: capitalize;
+      color: #49a6e9;
+    }
+
+
+    /* switch buttons section */
+    .switch-btn2 {
+      position: absolute;
+      top: 7%;
+      left: 7%;
+      width: 7rem;
+      height: 2rem;
+      display: flex;
+      border-radius: 0.5rem;
+      align-items: center;
+      justify-content: space-around;
+      border: none;
+      transition: all 0.3s linear;
+    }
+
+    .switch-btn2 span {
+      display: inline-block;
+      font-size: 0.85rem;
+      cursor: pointer;
+      text-transform: capitalize;
+      color: #49a6e9;
+    }
+
+
+   /* IMAGES STUFF */
+  .main-image {
+       max-width: 100%;
+       height: auto;
+       display: block;
+       margin: 0 auto;
+       /* Center the image horizontally */
+     }
+
+
+
+
    .row-padding img {
      margin-bottom: 5px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
    }
+
+
 
    /* big screen sidebar */
    .bigscreen-sidebar {
@@ -177,28 +275,23 @@
           font-size: 15px;
           
          }
-
-         .w3-image{
+/* 
+         .main-image{
           width: 100%;
-          height: 575px;
+          max-height: 1005px;
           object-fit: cover;
           object-position: bottom;
           z-index: 999;
-         }
+         } */
              /* Adjust top position for smaller screens */
 
 
-        .w3-content {
+        .content-sections {
           font-size: 0.8rem;
           
       
         }
 
-        /* This moves padding in sections e.g about me below
-        .w3-padding-64 {
-          padding-top: 32px !important;
-          padding-bottom: 32px !important
-        }  */
 
         /* Modal stuff NOW */
         .modal-content {
@@ -467,29 +560,6 @@
 }
 
 
-/* switch buttons section */
-.switch-btn {
-  position: absolute;
-  top: 7%;
-  left: 7%;
-  width: 7rem;
-  height: 2rem;
-  display: flex;
-  border-radius: 0.5rem;
-  align-items: center;
-  justify-content: space-around;
-  border: none;
-  transition: all 0.3s linear;
-}
-
-.switch-btn span {
-  display: inline-block;
-  font-size: 0.85rem;
-  cursor: pointer;
-  text-transform: capitalize;
-  color: #49a6e9;
-}
-
 .switch {
   position: absolute;
   width: 50%;
@@ -508,30 +578,6 @@
 }
 
 
-
-
-/* switch buttons section */
-.switch-btn2 {
-  position: absolute;
-  top: 7%;
-  left: 7%;
-  width: 7rem;
-  height: 2rem;
-  display: flex;
-  border-radius: 0.5rem;
-  align-items: center;
-  justify-content: space-around;
-  border: none;
-  transition: all 0.3s linear;
-}
-
-.switch-btn2 span {
-  display: inline-block;
-  font-size: 0.85rem;
-  cursor: pointer;
-  text-transform: capitalize;
-  color: #49a6e9;
-}
 
 .switch2 {
   position: absolute;
@@ -724,13 +770,7 @@ hr {
   margin: 20px 0
 }
 
-.w3-image {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  /* Center the image horizontally */
-}
+
 
 img {
   vertical-align: middle
@@ -740,36 +780,6 @@ a {
   color: inherit
 }
 
-
-.w3-button {
-  border: none;
-  display: inline-block;
-  padding: 8px 16px;
-  vertical-align: middle;
-  overflow: hidden;
-  text-decoration: none;
-  color: inherit;
-  background-color: inherit;
-  text-align: center;
-  cursor: pointer;
-  white-space: nowrap
-}
-
-
-.w3-button {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none
-}
-
-
-.w3-button:disabled {
-  cursor: not-allowed;
-  opacity: 0.3
-}
 
 
 :disabled * {
@@ -803,7 +813,7 @@ a {
   
 }
 
-.w3-bar .w3-button {
+.w3-bar .buttons {
   white-space: normal
 }
 
@@ -835,11 +845,7 @@ a {
 }
 
 
-.w3-half {
-  float: left;
-  width: 33%;
 
-}
 
 .border{
       border: 2px solid;
@@ -859,12 +865,12 @@ a {
     }
 
 
-.w3-content {
+.content-sections {
   margin-left: auto;
   margin-right: auto;
 }
 
-
+/* Gallery container section  START */
 .gallerycontainer{
     display: flex;
       justify-content: center;
@@ -875,21 +881,19 @@ a {
       /* Set height of container to viewport height */
       
 }
+.half-gallery-container {
+  float: left;
+  width: 33%;
 
-.w3-top {
-  position: fixed;
-  width: 100%;
-  z-index: 1
 }
 
-.w3-top {
-  top: 0
-}
 
 .row-padding,
-.row-padding>.w3-half {
+.row-padding>.half-gallery-container {
   padding: 0 8px
 }
+/* Gallery container section END  */
+
 
 @keyframes w3-spin {
   0% {
@@ -1032,10 +1036,6 @@ a {
   padding: 12px 24px !important
 }
 
-.w3-button:hover {
-  color: #000 !important;
-  background-color: #ccc !important
-}
 
 /* Colors */
 
@@ -1192,7 +1192,7 @@ nav {
 
 
 @media screen and (min-width: 1301px) {
-  .w3-content {
+  .content-sections {
       max-width: 1300px;
   
     }
@@ -1335,12 +1335,12 @@ nav {
 
 
 @media screen and (max-width: 320px) {
-
+  
 
   .text-overlay {
-    width: 90%;
+    width: 100%;
     background-color: transparent;
-    transform: translate(-50%, -30%);
+    transform: translate(-50%, -50%);
     
     /* Adjust the width as needed */
   }
@@ -1349,6 +1349,27 @@ nav {
   .sidebar{
     height: 50%;
   }
+
+    .learn-more-btn {
+      background-color: #6091e3;
+      color: #fff;
+      padding: 2px 5px;
+      text-decoration: none;
+      border-radius: 2px;
+      display: inline-block;
+      margin-top: 1px;
+      animation: pulse 2s infinite;
+      /* Apply pulsing animation */
+  
+    }
+
+                        .Education-container {
+                          font-size: 0.7rem;
+            
+            
+                        }
+
+  
 
 }
 
