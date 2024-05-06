@@ -6,27 +6,16 @@
      font-family: "Montserrat", sans-serif
    }
 
-   .row-padding img {
+   .w3-row-padding img {
      margin-bottom: 5px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
    }
 
-   /* big screen sidebar */
-   .bigscreen-sidebar {
+   /* Set the width of the sidebar to 120px */
+   .w3-sidebar {
      width: 120px;
      background: #f1f1f1;
    }
-    
-   .bigscreen-sidebar {
-       height: 100%;
-       width: 200px;
-       background-color: #f1f1f1;
-       position: fixed !important;
-       z-index: 1;
-       overflow: auto
-     }
-
-
 
    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
    #main {
@@ -173,7 +162,7 @@
       font-size: 1.7em;
      }
 
-         .hide-smallscreen{
+         .w3-hide-small{
           font-size: 15px;
           
          }
@@ -225,7 +214,7 @@
           background-color: chocolate;
         } */
     
-        .hide-smallscreen {
+        .w3-hide-small {
           display: none !important
         }
 
@@ -292,6 +281,17 @@
   top: 1%;
   left: 99%;
   font-size: 200%;
+  cursor: pointer;
+  color: white;
+  /* Change the color as needed */
+}
+
+
+.close-btn2 {
+  position: relative;
+  top: 1%;
+  left: 95%;
+  font-size: 100%;
   cursor: pointer;
   color: white;
   /* Change the color as needed */
@@ -654,13 +654,15 @@ select {
 
 
 button::-moz-focus-inner,
-[type=button]::-moz-focus-inner {
+[type=button]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
   padding: 0
 }
 
 button:-moz-focusring,
-[type=button]:-moz-focusring {
+[type=button]:-moz-focusring,
+[type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText
 }
 
@@ -776,7 +778,22 @@ a {
   pointer-events: none
 }
 
+.w3-input {
+  padding: 8px;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  width: 100%
+}
 
+.w3-sidebar {
+  height: 100%;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed !important;
+  z-index: 1;
+  overflow: auto
+}
 
 
 #main {
@@ -825,8 +842,8 @@ a {
 
 .w3-row:after,
 .w3-row:before,
-.row-padding:after,
-.row-padding:before,
+.w3-row-padding:after,
+.w3-row-padding:before,
 .w3-bar:before,
 .w3-bar:after {
   content: "";
@@ -886,8 +903,8 @@ a {
   top: 0
 }
 
-.row-padding,
-.row-padding>.w3-half {
+.w3-row-padding,
+.w3-row-padding>.w3-half {
   padding: 0 8px
 }
 
@@ -1010,6 +1027,10 @@ a {
   font-size: 5vw;
 }
 
+.welcome-text-small {
+  font-size: 0.8vw;
+}
+
 /* .w3-justify {
   text-align: justify !important
 } */
@@ -1062,6 +1083,11 @@ a {
   background-color: #f1f1f1 !important
 }
 
+.w3-dark-grey {
+  color: #fff !important;
+  background-color: #616161 !important
+}
+
 
 
 .w3-text-grey {
@@ -1085,11 +1111,34 @@ nav {
 
 }
 
+.hide-nav {
+  display: none;
+}
+
+.logo-head {
+  position: fixed;
+  top: 2rem;
+  left: 3rem;
+  font-size: 2rem;
+}
+
+.navhead {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
 .sidebar-heading {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
+}
+
+.logo {
+  height: 40px;
+  justify-self: center;
+  
 }
 
 
@@ -1163,6 +1212,23 @@ nav {
 
 .show-sidebar {
   transform: translate(0);
+}
+
+.links a {
+  color: hsl(209, 34%, 30%);
+  font-size: 1rem;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s linear;
+  text-decoration: none;
+}
+
+.links a:hover {
+  background: hsl(205, 86%, 81%);
+  color: hsl(205, 78%, 60%);
+  padding-left: 1.5rem;
 }
 
 
