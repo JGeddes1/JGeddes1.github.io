@@ -236,13 +236,15 @@ function getProjectDetails2(modalTarget2) {
         case 'modal1':
             return `
             <span class="close-btn" onclick="closeModal2()">&times;</span>
-                <h4>Battleships Undergraduate Year 1 </h4>
-                  <p>As part of my first-year undergraduate assignments, I developed a Battleships game in Java, utilizing the Java.util.swing packages. This project marked one of my early forays into object-oriented programming, prompting me to explore the principles and practices of OOP. The game, a strategic naval battle simulation, not only showcased my growing proficiency in Java programming but also laid the foundation for my understanding of object-oriented design concepts.<br>
+                <h4>Battleships Project </h4>
+                  <p>I developed a Battleships game in Java, utilizing the Java.util.swing packages. This project allowed me to explore and gain knowledge on object-oriented programming, during the creation of the game it prompted me to explore and begin to ponder about the key principles and practices of OOP. It really made me understand more about encapsulation with static, private and public fields. I did begin to think about more complex areas such as inheritance, although I admit this began mid way through project creation. The game also showcases my ability to write in Java programming.<br>
                 Skills demonstrated from this project:
                     <ul>
-                    <li>OOP programming</li>
-                    <li>UX/UI design</li>
+                    <li>Object-orientated programming</li>
+                    <li>Beginner UX/UI design</li>
                     <li>Math random logic</li>
+                    <li>CRC card design</li>
+                    
                     
                     </ul>
                     
@@ -250,7 +252,7 @@ function getProjectDetails2(modalTarget2) {
                         <a href="https://github.com/JGeddes1/UnderGradCompScience-Year-1/tree/main/Battleships/battleships/src" target="_blank">
                         <i class="fa fa-github fa-fw w3-text-white  w3-xxlarge w3-hover-opacity"></i> GitHub Repository Download</a>
                     </p>                    
-                    <iframe width="100%" height="500vh" src="https://www.youtube.com/embed/W2ZrgvEHiVc" title="Battleships Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="100%" height="500px" src="https://www.youtube.com/embed/bY1i_FN9dww" title="Battleships Project Working" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </p>
                     
             `;
@@ -293,20 +295,21 @@ function getProjectDetails2(modalTarget2) {
         case 'modal3':
             return `
             <span class="close-btn" onclick="closeModal2()">&times;</span>
-                  <h4>Undergraduate Train Ticket Project </h4>
-                        <p>As part of my first-year undergraduate module, I completed a fundamental project in Java, a command-line-based train ticket
-                        purchasing system. This project aimed to simulate a simplified ticketing experience, devoid of a graphical user interface,
-                        with the code executing directly from the terminal. Upon running the Java code, the program initiates a straightforward yet
-                        functional train ticket system. One notable feature is the dynamic display of available endpoints based on the user's selected
-                        starting point, enhancing user interaction and simplifying the ticket purchasing process. The system also includes options for
-                        selecting return or one-way tickets, providing users with flexibility in their travel choices. Through this project, I not only
-                        solidified my foundational Java programming skills but also gained experience in designing a functional and responsive system, laying the groundwork for more complex programming endeavors in my academic journey.
+                  <h4>Tic Tac Toe Project </h4>
+                        <p>This project was done as part of my reading from the book C# Players Guide by RB Whitaker. The task was to create tic tac toe the game
+                        using knowledge from the book to test my understanding of object orientated design. It made me begin by creating CRC card before developing the game. The project allowed me to understand how we can use multi dimensional arrays and
+                        how to apply fundamental principles of object orientated design. It also made me think and personally see how having OOP can make my code more organised and easier to understand.
                         </p>
                         <p>Skills demonstrated from this project:
                     <ul>
-                    <li>Java programming</li>
+                    <li>C# programming</li>
                     <li>Command Line Interface Development</li>
-                    <li>Problem-Solving and Algorithmic Thinking</li>
+                    <li>Problem-Solving</li>
+                    <li>Multi-dimensional arrays </li>
+                    <li>OOP</li>
+
+
+                    <iframe width="100%" height="500px" src="https://www.youtube.com/embed/4nyu6axG_3c" title="tic tac toe video demonstration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                    
                     <p class="w3-text-light-white">
                         <a href="https://github.com/JGeddes1/UnderGradCompScience-Year-1/tree/main/TrainTickets/src" target="_blank">
