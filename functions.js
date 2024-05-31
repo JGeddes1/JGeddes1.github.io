@@ -249,7 +249,7 @@ function getProjectDetails2(modalTarget2) {
                     </ul>
                     
                     <p class="w3-text-light-white">
-                        <a href="https://github.com/JGeddes1/UnderGradCompScience-Year-1/tree/main/Battleships/battleships/src" target="_blank">
+                        <a href="https://github.com/JGeddes1/Battleships-Game-Project" target="_blank">
                         <i class="fa fa-github fa-fw w3-text-white  w3-xxlarge w3-hover-opacity"></i> GitHub Repository Download</a>
                     </p>                    
                     <iframe width="100%" height="500px" src="https://www.youtube.com/embed/bY1i_FN9dww" title="Battleships Project Working" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
