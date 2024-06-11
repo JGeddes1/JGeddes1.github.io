@@ -449,7 +449,8 @@ closeBtnSidebar.addEventListener('click', function(){
 });
 
 
- var barsAnimated = false;
+var barsAnimated = false;
+ 
 
         function animateBarsIfVisible() {
             if (!barsAnimated && isElementInViewport(document.querySelector('.blue'))) {

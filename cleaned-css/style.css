@@ -1104,7 +1104,7 @@ nav {
   color: #6091e3;
   transition: all 0.3s linear;
   cursor: pointer;
-  animation: bounce 2s ease-in-out infinite;
+  /* animation: bounce 2s ease-in-out infinite; */
   position: fixed;
   top: 20px;
     /* Adjust the top distance from the top of the viewport */
