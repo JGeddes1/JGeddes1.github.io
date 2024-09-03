@@ -211,6 +211,28 @@ function closeModal2() {
 // Function to get the content for a specific project modal
 function getProjectDetails2(modalTarget2) {
     switch (modalTarget2) {
+        case 'modal12':
+            return `
+            <span class="close-btn" onclick="closeModal2()">&times;</span>
+                <h4>OverTheWire Bandit SSH War Games Level 1-5 Tutorials</h4>
+                  <p>A simple change audio script that runs in the background of my pc. This was my first major project using c# and had to understand importing libraries and the different style of coding
+                  that c# involves compared to python.<br>
+                Skills demonstrated from this project:
+                    <ul>
+                    <li>Visual Studio 2022</li>
+                    <li>AudioSwitcher.AudioApi</li>
+                    <li>WindowsInput</li>
+                    
+                    </ul>
+                    
+                    <p class="w3-text-light-white">
+                        <a href="https://github.com/JGeddes1/ChangeAudioDevice" target="_blank">
+                        <i class="fa fa-github fa-fw w3-text-white  w3-xxlarge w3-hover-opacity"></i> GitHub Repository Download</a>
+                    </p>                    
+                    
+                    </p>
+                    
+            `;
         case 'modal10':
             return `
             <span class="close-btn" onclick="closeModal2()">&times;</span>
@@ -291,6 +313,44 @@ function getProjectDetails2(modalTarget2) {
 
                                                 </div>
                                                
+            `;
+        case 'modal11':
+            return `
+            <span class="close-btn" onclick="closeModal2()">&times;</span>
+                  <h4>Professional Website for Architect Client</h4>
+                        <p>This was a paid project that involved me making a website for a client. The client was a school friend that wanted a professional portfolio website to be built.
+                         It was decided that the website would be built using React as the main framework.</p>
+
+                         <p>I used vite, as a local deplement server and to help setup the project, and tailwind to help make styling easier.</p>
+
+                         <p>The website itself uses many libraries but primarily I wanted to use three.js to display 3D architecture style models on the main loading screen section of the page.
+                         This was to give the webpage a modern and unique styling that fitted with teh clients brief. I also used other packages such as React-Vertical-Timeline and Tilt to make the page even more engaging.
+                        </p>
+                         
+                        <p> I hosted the website on a personal github account for the user as they did not want to pay domain hosting costs.
+
+                        </p>
+                        <p>Skills demonstrated from this project:
+                    <ul>
+                    <li>React libraries</li>
+                    <li>Three.js</li>
+                    <li>React</li>
+                    <li>Tailwind</li>
+                    <li>Vite</li>
+                    <li>Blender</li>
+                    <li>Github/ Git</li>
+                    </ul>
+                    <p>
+
+                    <img src="coding project_images/giphy.gif" alt="3dmodel demo" style="width:50%;height:auto;">
+                   
+                    <p class="w3-text-light-white">
+                        <a href="https://elliottyoung1.github.io/Portfolio-Website/" target="_blank">
+                        <i class=" fa-fw w3-text-white  w3-xxlarge w3-hover-opacity"></i> Link to clients website </a>
+                    </p>                       
+                    
+                    </p>
+                    
             `;
         case 'modal3':
             return `
