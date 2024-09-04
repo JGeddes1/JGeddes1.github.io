@@ -211,6 +211,68 @@ function closeModal2() {
 // Function to get the content for a specific project modal
 function getProjectDetails2(modalTarget2) {
     switch (modalTarget2) {
+        case 'modal14':
+            return `
+            <span class="close-btn" onclick="closeModal2()">&times;</span>
+                <h4>Shapefile GIS Checking Tool (ADS)</h4>
+                  <p>This appplication built in python uses geopandas and pandas to read shapefile and excel data, which is then used to compare against eachother and check that the metadata supplied includes all the attributes in the shapefile data.<br>
+                 
+                  The application provides an easy visual way to compare GIS shp data against the excel file in the application, without having to manually compare and load software taking a long time. The app also allows you to copy all non-matching attribute headers for ease of pasting into emails.
+                
+                  Skills demonstrated from this project:
+                    <ul>
+                    <li>Python</li>
+                    <li>Working with Geospatial data</li>
+                    <li>Geopandas library</li>
+                    <li>PyQt5 GUI library</li>
+                    
+                    </ul>
+
+                    <iframe width="100%" height="500px"  src="https://www.youtube.com/embed/PGKNHmu5Syc" title="GIS Application Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    
+                    <p class="w3-text-light-white">
+                        <a href="https://github.com/JGeddes1/ChangeAudioDevice" target="_blank">
+                        <i class="fa fa-github fa-fw w3-text-white  w3-xxlarge w3-hover-opacity"></i> GitHub Repository Download</a>
+                    </p>                    
+                    
+                    </p>
+                    
+            `;
+        case 'modal13':
+            return `
+            <span class="close-btn" onclick="closeModal2()">&times;</span>
+                <h4>Raster Metadata Auto Checker (ADS Tool)</h4>
+                  <p>This is a simple python application built recently to help archivists quickly check if there are any missing images deposited for an archive.
+                  </p>
+                  <p>
+                    It scans a chosen directory that the images deposited are stored and a related excel image metadata sheet for the archive, this then looks at all the image files in the directory
+                    against all filenames listed in the metadata. If there are any missing files it will appear in either the missing from directory list box or the missing from metadata list box given the situation.
+                </p>
+                <p>
+                    There is a final list box called "subject keywords". This is where a list of unique subject keywords found in the image metadata sheet are collated and listed for the user. This provides extra support
+                     when filling in the coverage tab in the collections management system for an archivist.
+                <br>
+                The application uses pyQt5, os, sys and openpyxl libraries to run.
+                <br>
+                </p>
+                <p>
+                Skills demonstrated from this project:
+                    <ul>
+                    <li>Python</li>
+                    <li>System Directory Coding Knowledge</li>
+                    <li>Process Optimisation</li>
+                    
+                    </ul>
+                    <iframe width="100%" height="500px" src="https://www.youtube.com/embed/GIsdi8t8Yq8" title="raster auto checker demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    
+                    <p class="w3-text-light-white">
+                        <a href="https://github.com/JGeddes1/raster_metadata_checker" target="_blank">
+                        <i class="fa fa-github fa-fw w3-text-white  w3-xxlarge w3-hover-opacity"></i> GitHub Repository Download</a>
+                    </p>                    
+                    
+                    </p>
+                    
+            `;
         case 'modal12':
             return `
             <span class="close-btn" onclick="closeModal2()">&times;</span>
