@@ -211,6 +211,46 @@ function closeModal2() {
 // Function to get the content for a specific project modal
 function getProjectDetails2(modalTarget2) {
     switch (modalTarget2) {
+        case 'modal15':
+            return `
+            <span class="close-btn" onclick="closeModal2()">&times;</span>
+                <h4>AI Auto Captions Generator For Videos</h4>
+                  <p>The purpose for this project was that during my time as a VSO (VLE Support Officer), I and other team members would make video tutorials on how to use aspects of the VLE. Given accesibility reasons the videos would need captions associated with them.<br>
+
+                  It was noted that some staff members (including me) would record sometimes videos without a script and this makes captions a little time consuming to create post recording.
+                  This inspired me to look into if there was any way to automatically get captions from recordings or create live captions as I speak. This led me to Whisper AI and the creation of this script.
+                  
+                  </p>
+                  <p>
+
+                  This repository has one script, which takes a video (local or on youtube) and creates timestamped captions for you automatically.
+                  The video script works the best (main.py), 
+                   </p>
+                  <p>
+                  There is another script, but not uploaded as it proved less effective, but it automatically translates your voice as you speak into captions for live captioning.
+                  This was not added to this repository, due to the first approach working better.
+        
+                  Skills demonstrated from this project:
+                    <ul>
+                    <li>AI/ML Model Integration</li>
+                    <li>Setting Specific Package Versioning</li>
+                    <li>Audio Processing</li>
+                    <li>Video Processing and Subtitles</li>
+                    <li>Programming & Scripting</li>
+                    <li>Setting up Virtual Environments</li>
+                    
+                    </ul>
+
+                    <iframe width="100%" height="500px" src="https://www.youtube.com/embed/zSB74uAi_Pc" title="Whisper AI Automatic Video Captions Maker Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    
+                    <p class="w3-text-light-white">
+                        <a href="https://github.com/JGeddes1/Auto-Caption-With-Whisper-AI-for-video-and-audio-files-" target="_blank">
+                        <i class="fa fa-github fa-fw w3-text-white  w3-xxlarge w3-hover-opacity"></i> GitHub Repository Download</a>
+                    </p>                    
+                    
+                    </p>
+                    
+            `;
         case 'modal14':
             return `
             <span class="close-btn" onclick="closeModal2()">&times;</span>
