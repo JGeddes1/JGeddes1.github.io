@@ -316,7 +316,7 @@ function getProjectDetails2(modalTarget2) {
         case 'modal12':
             return `
             <span class="close-btn" onclick="closeModal2()">&times;</span>
-                <h4>OverTheWire Bandit SSH War Games Level 1-5 Tutorials</h4>
+                <h4>OverTheWire Bandit SSH War Games Level 0-3 Guide Tutorial</h4>
                   <p>A simple change audio script that runs in the background of my pc. This was my first major project using c# and had to understand importing libraries and the different style of coding
                   that c# involves compared to python.<br>
                 Skills demonstrated from this project:
@@ -326,11 +326,10 @@ function getProjectDetails2(modalTarget2) {
                     <li>WindowsInput</li>
                     
                     </ul>
+
+                    <iframe width="100%" height="500px;" src="https://www.youtube.com/embed/9ciYXcDb0NU" title="Bandit Over The Wire Level 0 - 3 Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     
-                    <p class="w3-text-light-white">
-                        <a href="https://github.com/JGeddes1/ChangeAudioDevice" target="_blank">
-                        <i class="fa fa-github fa-fw w3-text-white  w3-xxlarge w3-hover-opacity"></i> GitHub Repository Download</a>
-                    </p>                    
+                    
                     
                     </p>
                     
