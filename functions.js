@@ -317,13 +317,19 @@ function getProjectDetails2(modalTarget2) {
             return `
             <span class="close-btn" onclick="closeModal2()">&times;</span>
                 <h4>OverTheWire Bandit SSH War Games Level 0-3 Guide Tutorial</h4>
-                  <p>A simple change audio script that runs in the background of my pc. This was my first major project using c# and had to understand importing libraries and the different style of coding
-                  that c# involves compared to python.<br>
+                  <p>The Bandit Wargame is a popular beginner-level challenge hosted by OverTheWire, a website offering a series of "wargames" designed to teach and improve cybersecurity and hacking skills. It focuses on Linux command-line basics.
+                </p>
+                <p>In Bandit, each level presents a task that must be solved using Linux commands. Upon completing the task, players are given a password to move on to the next level.
+                </p>
+                <p>
+                This tutorial covers the first three levels of the war games and how to complete each task.
+                <br>
                 Skills demonstrated from this project:
                     <ul>
-                    <li>Visual Studio 2022</li>
-                    <li>AudioSwitcher.AudioApi</li>
-                    <li>WindowsInput</li>
+                    <li>Navigating directories and files in Linux</li>
+                    <li>Command-line tools like grep, cat, ls</li>
+                    <li>SSH usage for remote access</li>
+                    <li>Understanding hidden files and special file types</li>
                     
                     </ul>
 
