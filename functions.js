@@ -211,6 +211,34 @@ function closeModal2() {
 // Function to get the content for a specific project modal
 function getProjectDetails2(modalTarget2) {
     switch (modalTarget2) {
+        case 'modal16':
+            return `
+            <span class="close-btn" onclick="closeModal2()">&times;</span>
+                <h4>Apache Install Live Demo Guide (Ubunutu)</h4>
+                  <p>I developed the Apache installation guide as part of my ongoing journey to deepen my understanding of web server management and networking principles. My goal was to solidify key concepts, such as how servers handle HTTP requests, and to gain hands-on experience in setting up and configuring essential services like Apache. 
+                  </p>
+                  <p>
+
+                  Additionally, I wanted to create a resource that could help me and others navigate the installation and configuration process with clarity in the future. Documenting this step-by-step guide helped me to not only improve my technical skills but also to communicate these concepts in a clear and accessible manner, which is critical when troubleshooting or working with a team.
+                   </p>
+                  <p>
+    
+                  Skills demonstrated from this project:
+                    <ul>
+                    <li>Apache Installation</li>
+                    <li>Troubleshooting and Problem-Solving</li>
+                    <li>Understanding Web Server Architecture</li>
+                    <li>Video Processing and Subtitles</li>
+                    <li>Security Best Practices</li>
+                    
+                    </ul>
+
+                    <div style="padding:56.35% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1016091143?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Apache Install Live Demo Guide (Ubunutu)"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                                     
+                    
+                    </p>
+                    
+            `;
         case 'modal15':
             return `
             <span class="close-btn" onclick="closeModal2()">&times;</span>
