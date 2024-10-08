@@ -215,9 +215,11 @@ function getProjectDetails2(modalTarget2) {
             return `
             <span class="close-btn" onclick="closeModal2()">&times;</span>
                 <h4>Bash Scripts Examples</h4>
-                  <p>This project includes some bash scripts that I have developed for personal and professional usage. These include primarily backup scripts, such as backing up my coding work on windows using robocopy or backing up apache server on ubuntu.</p>
+                  <p>This project includes some bash scripts that I have developed for personal and professional usage. These include primarily backup scripts, such as backing up my coding work on windows using robocopy, running GIS image conversions or backing up apache server on ubuntu.</p>
 
                   <p>
+
+                  <p> A video recording of me demonstrating the bash script to backup an apache server config is below: </p>
     
                   Skills demonstrated from this project:
                     <ul>
@@ -227,6 +229,7 @@ function getProjectDetails2(modalTarget2) {
 
                     
                     </ul>
+                    
 
                     <iframe width="100%" height="500" src="https://www.youtube.com/embed/HHL6CQndvjw" title="Apache bash backup script" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>          
                     
