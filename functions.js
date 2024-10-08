@@ -214,7 +214,7 @@ function getProjectDetails2(modalTarget2) {
         case 'modal16':
             return `
             <span class="close-btn" onclick="closeModal2()">&times;</span>
-                <h4>Apache Install Live Demo Guide (Ubunutu)</h4>
+                <h4>Apache Install Live Demo Guide (Ubuntu)</h4>
                   <p>I developed the Apache installation guide as part of my ongoing journey to deepen my understanding of web server management and networking principles. My goal was to solidify key concepts, such as how servers handle HTTP requests, and to gain hands-on experience in setting up and configuring essential services like Apache. 
                   </p>
                   <p>
