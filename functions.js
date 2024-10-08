@@ -211,6 +211,32 @@ function closeModal2() {
 // Function to get the content for a specific project modal
 function getProjectDetails2(modalTarget2) {
     switch (modalTarget2) {
+        case 'modal17':
+            return `
+            <span class="close-btn" onclick="closeModal2()">&times;</span>
+                <h4>Bash Scripts Examples</h4>
+                  <p>This project includes some bash scripts that I have developed for personal and professional usage. These include primarily backup scripts, such as backing up my coding work on windows using robocopy or backing up apache server on ubuntu.</p>
+
+                  <p>
+    
+                  Skills demonstrated from this project:
+                    <ul>
+                    <li>Coding in Bash</li>
+                    <li>Streamline services</li>
+                    <li>Automate Procedures</li>
+
+                    
+                    </ul>
+
+                    <iframe width="100%" height="500" src="https://www.youtube.com/embed/HHL6CQndvjw" title="Apache bash backup script" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>          
+                    
+                    </p>
+                                        <p class="w3-text-light-white">
+                        <a href="https://github.com/JGeddes1/Batch-Scripts" target="_blank">
+                        <i class="fa fa-github fa-fw w3-text-white  w3-xxlarge w3-hover-opacity"></i> GitHub Repository Download</a>
+                    </p>  
+                    
+            `;
         case 'modal16':
             return `
             <span class="close-btn" onclick="closeModal2()">&times;</span>
@@ -299,7 +325,7 @@ function getProjectDetails2(modalTarget2) {
                     <iframe width="100%" height="500px"  src="https://www.youtube.com/embed/PGKNHmu5Syc" title="GIS Application Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     
                     <p class="w3-text-light-white">
-                        <a href="https://github.com/JGeddes1/ChangeAudioDevice" target="_blank">
+                        <a href="https://github.com/JGeddes1/GIS-Wizard-Project" target="_blank">
                         <i class="fa fa-github fa-fw w3-text-white  w3-xxlarge w3-hover-opacity"></i> GitHub Repository Download</a>
                     </p>                    
                     
@@ -507,7 +533,7 @@ function getProjectDetails2(modalTarget2) {
                     <iframe width="100%" height="500px" src="https://www.youtube.com/embed/4nyu6axG_3c" title="tic tac toe video demonstration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                    
                     <p class="w3-text-light-white">
-                        <a href="https://github.com/JGeddes1/UnderGradCompScience-Year-1/tree/main/TrainTickets/src" target="_blank">
+                        <a href="https://github.com/JGeddes1/C--Players-Guide-Book-Tasks/tree/main/tic-tac-toe" target="_blank">
                         <i class="fa fa-github fa-fw w3-text-white  w3-xxlarge w3-hover-opacity"></i> GitHub Repository Download</a>
                     </p>                       
                     </ul>
