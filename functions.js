@@ -211,6 +211,37 @@ function closeModal2() {
 // Function to get the content for a specific project modal
 function getProjectDetails2(modalTarget2) {
     switch (modalTarget2) {
+        case 'modal18':
+            return `
+            <span class="close-btn" onclick="closeModal2()">&times;</span>
+                <h4>Elliott Young Design Website</h4>
+                <p>This project was my first commissioned piece, created for Elliott Young Design, a Chartered Institute of Architectural Technologists registered practice based in the North East of England.</p>
+                <p>The website showcases the company’s expertise in remodelling and extending homes, highlighting their use of the latest AutoCAD, 3D modelling, and rendering software to bring residential projects to life.</p>
+                
+                <p>Key technologies used in this project:</p>
+                <ul>
+                    <li>React for dynamic and interactive UI</li>
+                    <li>Tailwind CSS for modern and responsive styling</li>
+                    <li>Vite for fast development and bundling</li>
+                    <li>GitHub Pages for free domain hosting</li>
+                </ul>
+                
+               
+                
+                <p>Skills demonstrated in this project:</p>
+                <ul>
+                    <li>Frontend development with React</li>
+                    <li>Responsive design using Tailwind CSS</li>
+                    <li>Deploying and hosting static websites with GitHub Pages</li>
+                </ul>
+                 <p>Check out the live website here: 
+                    <a href="https://elliottyoungdesign.github.io/EYD/" target="_blank">
+                        https://elliottyoungdesign.github.io/EYD/
+                    </a>
+
+                    <img src="coding project_images/EYD_Homepage.PNG" alt="3dmodel demo" style="width:50%;height:auto;">
+                </p>    
+            `;
         case 'modal17':
             return `
             <span class="close-btn" onclick="closeModal2()">&times;</span>
